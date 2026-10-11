@@ -1,0 +1,4 @@
+interface:
+  display_name: "test-anti-patterns"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $test-anti-patterns through plugin dotnet-test and preserve the pinned upstream source."

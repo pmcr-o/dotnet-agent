@@ -1,0 +1,4 @@
+interface:
+  display_name: "directory-build-organization"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $directory-build-organization through plugin dotnet-msbuild and preserve the pinned upstream source."

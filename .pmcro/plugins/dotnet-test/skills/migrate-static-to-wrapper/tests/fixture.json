@@ -1,0 +1,7 @@
+{
+  "skill": "migrate-static-to-wrapper",
+  "plugin": "dotnet-test",
+  "source": "plugins/dotnet-test/skills/migrate-static-to-wrapper",
+  "revision": "1d40f95ed0f2cdedfa4c9b2614b7c2035a4323cb",
+  "kind": "upstream-plugin-skill"
+}

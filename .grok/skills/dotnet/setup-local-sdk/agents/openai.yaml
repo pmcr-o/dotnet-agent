@@ -1,0 +1,4 @@
+interface:
+  display_name: "setup-local-sdk"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $setup-local-sdk through plugin dotnet and preserve the pinned upstream source."

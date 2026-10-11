@@ -1,0 +1,20 @@
+{
+  "id": "apple-crash-symbolication",
+  "plugin": "dotnet-diag",
+  "independentSurface": true,
+  "independentChecker": false,
+  "sourceRef": "plugins/dotnet-diag/skills/apple-crash-symbolication",
+  "input": [
+    "seed",
+    "workspace",
+    "relativeScript",
+    "apply"
+  ],
+  "output": [
+    "source",
+    "command",
+    "exitCode",
+    "evidence",
+    "checker_handoff"
+  ]
+}

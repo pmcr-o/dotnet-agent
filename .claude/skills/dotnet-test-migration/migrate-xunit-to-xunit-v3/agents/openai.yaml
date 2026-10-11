@@ -1,0 +1,4 @@
+interface:
+  display_name: "migrate-xunit-to-xunit-v3"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $migrate-xunit-to-xunit-v3 through plugin dotnet-test-migration and preserve the pinned upstream source."

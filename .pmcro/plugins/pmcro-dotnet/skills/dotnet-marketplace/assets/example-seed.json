@@ -1,0 +1,18 @@
+{
+  "goal": "Build dotnet-agent marketplace from the published dotnet/skills catalog",
+  "organization": "PMCR-O",
+  "namingConvention": "ProjectName/Skills",
+  "constraints": [
+    "local Ollama",
+    "MAF native",
+    "progressive disclosure",
+    "native API messages",
+    "preserve upstream content and licenses"
+  ],
+  "acceptance": [
+    "Pinned catalog and byte-preserved published plugins",
+    "Top-level goal orchestration",
+    "Native MAF skill loading and local Ollama tool round trip",
+    "Validated portable manifests and host catalogs"
+  ]
+}

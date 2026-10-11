@@ -1,0 +1,7 @@
+{
+  "runtimes": {
+    "Microsoft.NETCore.App": "System.Private.CoreLib.dll",
+    "Microsoft.AspNetCore.App": "Microsoft.AspNetCore.dll",
+    "Microsoft.WindowsDesktop.App": "System.Windows.Forms.dll"
+  }
+}

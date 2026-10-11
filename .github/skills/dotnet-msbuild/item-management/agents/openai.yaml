@@ -1,0 +1,4 @@
+interface:
+  display_name: "item-management"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $item-management through plugin dotnet-msbuild and preserve the pinned upstream source."

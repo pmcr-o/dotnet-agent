@@ -1,0 +1,20 @@
+{
+  "id": "dotnet-maui-doctor",
+  "plugin": "dotnet-maui",
+  "independentSurface": true,
+  "independentChecker": false,
+  "sourceRef": "plugins/dotnet-maui/skills/dotnet-maui-doctor",
+  "input": [
+    "seed",
+    "workspace",
+    "relativeScript",
+    "apply"
+  ],
+  "output": [
+    "source",
+    "command",
+    "exitCode",
+    "evidence",
+    "checker_handoff"
+  ]
+}

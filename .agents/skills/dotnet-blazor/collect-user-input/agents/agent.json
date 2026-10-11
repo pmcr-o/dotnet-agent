@@ -1,0 +1,20 @@
+{
+  "id": "collect-user-input",
+  "plugin": "dotnet-blazor",
+  "independentSurface": true,
+  "independentChecker": false,
+  "sourceRef": "plugins/dotnet-blazor/skills/collect-user-input",
+  "input": [
+    "seed",
+    "workspace",
+    "relativeScript",
+    "apply"
+  ],
+  "output": [
+    "source",
+    "command",
+    "exitCode",
+    "evidence",
+    "checker_handoff"
+  ]
+}

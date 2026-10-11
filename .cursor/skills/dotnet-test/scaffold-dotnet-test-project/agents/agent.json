@@ -1,0 +1,20 @@
+{
+  "id": "scaffold-dotnet-test-project",
+  "plugin": "dotnet-test",
+  "independentSurface": true,
+  "independentChecker": false,
+  "sourceRef": "plugins/dotnet-test/skills/scaffold-dotnet-test-project",
+  "input": [
+    "seed",
+    "workspace",
+    "relativeScript",
+    "apply"
+  ],
+  "output": [
+    "source",
+    "command",
+    "exitCode",
+    "evidence",
+    "checker_handoff"
+  ]
+}

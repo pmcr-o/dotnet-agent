@@ -1,0 +1,20 @@
+{
+  "id": "dotnet-webapi",
+  "plugin": "dotnet-aspnetcore",
+  "independentSurface": true,
+  "independentChecker": false,
+  "sourceRef": "plugins/dotnet-aspnetcore/skills/dotnet-webapi",
+  "input": [
+    "seed",
+    "workspace",
+    "relativeScript",
+    "apply"
+  ],
+  "output": [
+    "source",
+    "command",
+    "exitCode",
+    "evidence",
+    "checker_handoff"
+  ]
+}

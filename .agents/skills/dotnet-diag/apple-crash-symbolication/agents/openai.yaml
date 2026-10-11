@@ -1,0 +1,4 @@
+interface:
+  display_name: "apple-crash-symbolication"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $apple-crash-symbolication through plugin dotnet-diag and preserve the pinned upstream source."

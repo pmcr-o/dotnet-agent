@@ -1,0 +1,111 @@
+{
+  "schema": "dotagents.manifest/v1",
+  "name": "dotnet-agent",
+  "owner": "pmcr-o",
+  "description": "Full pinned dotnet/skills repository mirror plus PMCR-O integration wrappers and toolchain capabilities.",
+  "invocationField": "plugin",
+  "plugins": [
+    {
+      "name": "dotnet",
+      "source": "./.pmcro/plugins/dotnet",
+      "description": "dotnet capabilities owned by dotnet-agent"
+    },
+    {
+      "name": "dotnet-advanced",
+      "source": "./.pmcro/plugins/dotnet-advanced",
+      "description": "dotnet-advanced capabilities owned by dotnet-agent"
+    },
+    {
+      "name": "dotnet-ai",
+      "source": "./.pmcro/plugins/dotnet-ai",
+      "description": "dotnet-ai capabilities owned by dotnet-agent"
+    },
+    {
+      "name": "dotnet-aspnetcore",
+      "source": "./.pmcro/plugins/dotnet-aspnetcore",
+      "description": "dotnet-aspnetcore capabilities owned by dotnet-agent"
+    },
+    {
+      "name": "dotnet-blazor",
+      "source": "./.pmcro/plugins/dotnet-blazor",
+      "description": "dotnet-blazor capabilities owned by dotnet-agent"
+    },
+    {
+      "name": "dotnet-data",
+      "source": "./.pmcro/plugins/dotnet-data",
+      "description": "dotnet-data capabilities owned by dotnet-agent"
+    },
+    {
+      "name": "dotnet-diag",
+      "source": "./.pmcro/plugins/dotnet-diag",
+      "description": "dotnet-diag capabilities owned by dotnet-agent"
+    },
+    {
+      "name": "dotnet-experimental",
+      "source": "./.pmcro/plugins/dotnet-experimental",
+      "description": "dotnet-experimental capabilities owned by dotnet-agent"
+    },
+    {
+      "name": "dotnet-maui",
+      "source": "./.pmcro/plugins/dotnet-maui",
+      "description": "dotnet-maui capabilities owned by dotnet-agent"
+    },
+    {
+      "name": "dotnet-msbuild",
+      "source": "./.pmcro/plugins/dotnet-msbuild",
+      "description": "dotnet-msbuild capabilities owned by dotnet-agent"
+    },
+    {
+      "name": "dotnet-nuget",
+      "source": "./.pmcro/plugins/dotnet-nuget",
+      "description": "dotnet-nuget capabilities owned by dotnet-agent"
+    },
+    {
+      "name": "dotnet-repo-authoring",
+      "source": "./.pmcro/plugins/dotnet-repo-authoring",
+      "description": "dotnet-repo-authoring capabilities owned by dotnet-agent"
+    },
+    {
+      "name": "dotnet-template-engine",
+      "source": "./.pmcro/plugins/dotnet-template-engine",
+      "description": "dotnet-template-engine capabilities owned by dotnet-agent"
+    },
+    {
+      "name": "dotnet-test",
+      "source": "./.pmcro/plugins/dotnet-test",
+      "description": "dotnet-test capabilities owned by dotnet-agent"
+    },
+    {
+      "name": "dotnet-test-migration",
+      "source": "./.pmcro/plugins/dotnet-test-migration",
+      "description": "dotnet-test-migration capabilities owned by dotnet-agent"
+    },
+    {
+      "name": "dotnet-upgrade",
+      "source": "./.pmcro/plugins/dotnet-upgrade",
+      "description": "dotnet-upgrade capabilities owned by dotnet-agent"
+    },
+    {
+      "name": "dotnet-winforms",
+      "source": "./.pmcro/plugins/dotnet-winforms",
+      "description": "dotnet-winforms capabilities owned by dotnet-agent"
+    },
+    {
+      "name": "dotnet-workflows",
+      "source": "./.pmcro/plugins/dotnet-workflows",
+      "description": "dotnet-workflows capabilities owned by dotnet-agent"
+    },
+    {
+      "name": "dotnet11",
+      "source": "./.pmcro/plugins/dotnet11",
+      "description": "dotnet11 capabilities owned by dotnet-agent"
+    },
+    {
+      "name": "pmcro-dotnet",
+      "source": "./.pmcro/plugins/pmcro-dotnet",
+      "description": "pmcro-dotnet capabilities owned by dotnet-agent"
+    }
+  ],
+  "canonical": ".pmcro",
+  "projection": ".agents"
+}

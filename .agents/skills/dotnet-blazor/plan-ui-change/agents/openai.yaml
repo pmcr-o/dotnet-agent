@@ -1,0 +1,4 @@
+interface:
+  display_name: "plan-ui-change"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $plan-ui-change through plugin dotnet-blazor and preserve the pinned upstream source."

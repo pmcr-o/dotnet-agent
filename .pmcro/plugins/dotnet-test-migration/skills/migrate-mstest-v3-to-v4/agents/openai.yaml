@@ -1,0 +1,4 @@
+interface:
+  display_name: "migrate-mstest-v3-to-v4"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $migrate-mstest-v3-to-v4 through plugin dotnet-test-migration and preserve the pinned upstream source."

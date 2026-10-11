@@ -1,0 +1,4 @@
+interface:
+  display_name: "run-tests"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $run-tests through plugin dotnet-test and preserve the pinned upstream source."

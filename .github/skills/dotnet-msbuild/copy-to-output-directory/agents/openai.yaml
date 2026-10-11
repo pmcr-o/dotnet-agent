@@ -1,0 +1,4 @@
+interface:
+  display_name: "copy-to-output-directory"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $copy-to-output-directory through plugin dotnet-msbuild and preserve the pinned upstream source."

@@ -1,0 +1,32 @@
+{
+  "schema": "pmcro.agent-project/v1",
+  "id": "dotnet-agent",
+  "description": "Full pinned dotnet/skills repository mirror plus PMCR-O integration wrappers and toolchain capabilities.",
+  "derivedFrom": "https://github.com/dotnet/skills.git@1d40f95ed0f2cdedfa4c9b2614b7c2035a4323cb",
+  "template": "agent-skills-template",
+  "canonical": ".pmcro",
+  "projection": ".agents",
+  "hostChain": ".claude/.grok/.cursor/.github -> .agents -> .pmcro",
+  "requiredSkillShape": [
+    "SKILL.md",
+    "agents/",
+    "scripts/",
+    "references/",
+    "assets/",
+    "tests/"
+  ],
+  "autonomousLoop": {
+    "enabled": true,
+    "questionGate": false,
+    "onQuestion": "resolve-from-context-or-halt",
+    "phaseOrder": [
+      "orchestrate",
+      "plan",
+      "make",
+      "check",
+      "reflect"
+    ]
+  },
+  "orchestratorRole": "domain-orchestrator",
+  "agentIsOrchestrator": true
+}

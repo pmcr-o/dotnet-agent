@@ -1,0 +1,4 @@
+interface:
+  display_name: "create-blazor-project"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $create-blazor-project through plugin dotnet-blazor and preserve the pinned upstream source."

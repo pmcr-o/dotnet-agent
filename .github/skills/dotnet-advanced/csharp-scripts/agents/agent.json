@@ -1,0 +1,20 @@
+{
+  "id": "csharp-scripts",
+  "plugin": "dotnet-advanced",
+  "independentSurface": true,
+  "independentChecker": false,
+  "sourceRef": "plugins/dotnet-advanced/skills/csharp-scripts",
+  "input": [
+    "seed",
+    "workspace",
+    "relativeScript",
+    "apply"
+  ],
+  "output": [
+    "source",
+    "command",
+    "exitCode",
+    "evidence",
+    "checker_handoff"
+  ]
+}

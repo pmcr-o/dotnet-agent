@@ -1,0 +1,20 @@
+{
+  "id": "thread-abort-migration",
+  "plugin": "dotnet-upgrade",
+  "independentSurface": true,
+  "independentChecker": false,
+  "sourceRef": "plugins/dotnet-upgrade/skills/thread-abort-migration",
+  "input": [
+    "seed",
+    "workspace",
+    "relativeScript",
+    "apply"
+  ],
+  "output": [
+    "source",
+    "command",
+    "exitCode",
+    "evidence",
+    "checker_handoff"
+  ]
+}

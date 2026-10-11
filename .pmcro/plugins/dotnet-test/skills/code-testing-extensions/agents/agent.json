@@ -1,0 +1,20 @@
+{
+  "id": "code-testing-extensions",
+  "plugin": "dotnet-test",
+  "independentSurface": true,
+  "independentChecker": false,
+  "sourceRef": "plugins/dotnet-test/skills/code-testing-extensions",
+  "input": [
+    "seed",
+    "workspace",
+    "relativeScript",
+    "apply"
+  ],
+  "output": [
+    "source",
+    "command",
+    "exitCode",
+    "evidence",
+    "checker_handoff"
+  ]
+}

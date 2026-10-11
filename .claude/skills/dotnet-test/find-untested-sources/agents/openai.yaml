@@ -1,0 +1,4 @@
+interface:
+  display_name: "find-untested-sources"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $find-untested-sources through plugin dotnet-test and preserve the pinned upstream source."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "convert-to-cpm"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $convert-to-cpm through plugin dotnet-nuget and preserve the pinned upstream source."

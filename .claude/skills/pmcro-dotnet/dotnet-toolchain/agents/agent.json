@@ -1,0 +1,17 @@
+{
+  "id": "dotnet-toolchain",
+  "plugin": "dotnet-agent",
+  "independentChecker": false,
+  "independentSurface": true,
+  "samplePromptsRef": "references/sample-prompts.md",
+  "input": [
+    "intent",
+    "workspace",
+    "scope"
+  ],
+  "output": [
+    "artifact",
+    "evidence",
+    "checker_handoff"
+  ]
+}

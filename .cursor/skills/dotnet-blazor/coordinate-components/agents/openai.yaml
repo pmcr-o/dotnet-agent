@@ -1,0 +1,4 @@
+interface:
+  display_name: "coordinate-components"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $coordinate-components through plugin dotnet-blazor and preserve the pinned upstream source."

@@ -1,0 +1,7 @@
+{
+  "skill": "maui-shell-navigation",
+  "plugin": "dotnet-maui",
+  "source": "plugins/dotnet-maui/skills/maui-shell-navigation",
+  "revision": "1d40f95ed0f2cdedfa4c9b2614b7c2035a4323cb",
+  "kind": "upstream-plugin-skill"
+}

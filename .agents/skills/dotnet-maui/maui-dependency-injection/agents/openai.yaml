@@ -1,0 +1,4 @@
+interface:
+  display_name: "maui-dependency-injection"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $maui-dependency-injection through plugin dotnet-maui and preserve the pinned upstream source."

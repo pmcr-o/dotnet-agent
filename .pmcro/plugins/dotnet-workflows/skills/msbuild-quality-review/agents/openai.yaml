@@ -1,0 +1,4 @@
+interface:
+  display_name: "msbuild-quality-review"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $msbuild-quality-review through plugin dotnet-workflows and preserve the pinned upstream source."

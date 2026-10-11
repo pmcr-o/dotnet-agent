@@ -1,0 +1,20 @@
+{
+  "id": "migrate-dotnet8-to-dotnet9",
+  "plugin": "dotnet-upgrade",
+  "independentSurface": true,
+  "independentChecker": false,
+  "sourceRef": "plugins/dotnet-upgrade/skills/migrate-dotnet8-to-dotnet9",
+  "input": [
+    "seed",
+    "workspace",
+    "relativeScript",
+    "apply"
+  ],
+  "output": [
+    "source",
+    "command",
+    "exitCode",
+    "evidence",
+    "checker_handoff"
+  ]
+}

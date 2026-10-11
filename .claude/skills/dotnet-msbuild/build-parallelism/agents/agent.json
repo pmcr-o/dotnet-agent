@@ -1,0 +1,20 @@
+{
+  "id": "build-parallelism",
+  "plugin": "dotnet-msbuild",
+  "independentSurface": true,
+  "independentChecker": false,
+  "sourceRef": "plugins/dotnet-msbuild/skills/build-parallelism",
+  "input": [
+    "seed",
+    "workspace",
+    "relativeScript",
+    "apply"
+  ],
+  "output": [
+    "source",
+    "command",
+    "exitCode",
+    "evidence",
+    "checker_handoff"
+  ]
+}

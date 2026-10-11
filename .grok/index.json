@@ -1,0 +1,798 @@
+{
+  "apiVersion": "pmcro.dev/v1",
+  "kind": "agent.index",
+  "agent": "dotnet-agent",
+  "entries": [
+    {
+      "route": "@dotnet-agent /dotnet:csharp-expert",
+      "plugin": "dotnet",
+      "skill": "csharp-expert",
+      "description": ">-",
+      "path": ".pmcro/plugins/dotnet/skills/csharp-expert"
+    },
+    {
+      "route": "@dotnet-agent /dotnet:csharp-refactoring",
+      "plugin": "dotnet",
+      "skill": "csharp-refactoring",
+      "description": "Safely refactors C#/.NET code without changing behavior. USE FOR any request to refactor, rename, move, extract, inline, merge, consolidate, deduplicate, split, or modernize C# code, including partial/generated declarations, wrappers, public APIs, serialization/reflection/configuration names, friend assemblies, conditional compilation, and multi-targeted projects. Also use when a request calls a feature, bug fix, package/framework upgrade, or public nullability change a refactor and the behavior-changing part must be separated or declined. DO NOT USE FOR ordinary feature or bug fixes not presented as refactoring; standalone upgrades after reclassification (use dotnet-upgrade); adding tests; or formatting-only work.",
+      "path": ".pmcro/plugins/dotnet/skills/csharp-refactoring"
+    },
+    {
+      "route": "@dotnet-agent /dotnet:msbuild",
+      "plugin": "dotnet",
+      "skill": "msbuild",
+      "description": "Use only for MSBuild failure investigation, build-performance analysis, or review of existing build XML/extension contracts. A plan to convert a working legacy/non-SDK project to SDK style or migrate packages.config is a project-system migration, NOT a build-file review: do not activate, even to check scope. Framework/API upgrades are also excluded. Activate for advisory Import/Exists hook and NuGet packed-import questions even without a checkout or failed build; .csproj/.fsproj/.vbproj/.props/.targets conditions; custom-target inputs/outputs; .binlog capture/replay; failing dotnet build/restore/pack/publish or MSBuild-based test builds; slow evaluation, compilation, copying, or no-change builds; and controlled timing comparisons. Exclude SDK installation alone, C# refactoring, runtime profiling, assertions after successful builds, and non-MSBuild builds.",
+      "path": ".pmcro/plugins/dotnet/skills/msbuild"
+    },
+    {
+      "route": "@dotnet-agent /dotnet:setup-local-sdk",
+      "plugin": "dotnet",
+      "skill": "setup-local-sdk",
+      "description": ">",
+      "path": ".pmcro/plugins/dotnet/skills/setup-local-sdk"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-advanced:csharp-scripts",
+      "plugin": "dotnet-advanced",
+      "skill": "csharp-scripts",
+      "description": "Run file-based C# apps with the .NET CLI when the user explicitly wants C#/.NET code without creating a project. Use for C# language/API experiments, one-file C# apps, small multi-file C# apps composed with `#:include`/`#:exclude`, or C# file-based apps linked with `#:ref`. Do not use for language-agnostic throwaway scripts, generic computations, Python/PowerShell-style automation, full projects, or existing app integration.",
+      "path": ".pmcro/plugins/dotnet-advanced/skills/csharp-scripts"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-advanced:dotnet-pinvoke",
+      "plugin": "dotnet-advanced",
+      "skill": "dotnet-pinvoke",
+      "description": ">",
+      "path": ".pmcro/plugins/dotnet-advanced/skills/dotnet-pinvoke"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-advanced:nuget-trusted-publishing",
+      "plugin": "dotnet-advanced",
+      "skill": "nuget-trusted-publishing",
+      "description": ">",
+      "path": ".pmcro/plugins/dotnet-advanced/skills/nuget-trusted-publishing"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-advanced:vectorization",
+      "plugin": "dotnet-advanced",
+      "skill": "vectorization",
+      "description": ">",
+      "path": ".pmcro/plugins/dotnet-advanced/skills/vectorization"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-ai:technology-selection",
+      "plugin": "dotnet-ai",
+      "skill": "technology-selection",
+      "description": "Guides technology selection and implementation of AI and ML features in .NET 8+ applications using ML.NET, Microsoft.Extensions.AI (MEAI), Microsoft Agent Framework (MAF), GitHub Copilot SDK, ONNX Runtime, and OllamaSharp. Covers the full spectrum from classic ML through modern LLM orchestration to local inference. Use when adding classification, regression, clustering, anomaly detection, recommendation, LLM integration (text generation, summarization, reasoning), RAG pipelines with vector search, agentic workflows with tool calling, Copilot extensions, or custom model inference via ONNX Runtime to a .NET project. DO NOT USE FOR projects targeting .NET Framework (requires .NET 8+), the task is pure data engineering or ETL with no ML/AI component, or the project needs a custom deep learning training loop (use Python with PyTorch/TensorFlow, then export to ONNX for .NET inference).",
+      "path": ".pmcro/plugins/dotnet-ai/skills/technology-selection"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-aspnetcore:convert-blazor-server-to-webapp",
+      "plugin": "dotnet-aspnetcore",
+      "skill": "convert-blazor-server-to-webapp",
+      "description": ">",
+      "path": ".pmcro/plugins/dotnet-aspnetcore/skills/convert-blazor-server-to-webapp"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-aspnetcore:dotnet-webapi",
+      "plugin": "dotnet-aspnetcore",
+      "skill": "dotnet-webapi",
+      "description": ">",
+      "path": ".pmcro/plugins/dotnet-aspnetcore/skills/dotnet-webapi"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-blazor:author-component",
+      "plugin": "dotnet-blazor",
+      "skill": "author-component",
+      "description": ">",
+      "path": ".pmcro/plugins/dotnet-blazor/skills/author-component"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-blazor:collect-user-input",
+      "plugin": "dotnet-blazor",
+      "skill": "collect-user-input",
+      "description": "Build forms, validate data, and react to user input in Blazor. USE FOR adding forms, search boxes, filter panels, inline editing, data-entry UI, file uploads, validation (annotations or custom), handling form submissions, and binding input controls. Covers EditForm, built-in input components, DataAnnotationsValidator, custom validation, SSR form patterns (SupplyParameterFromForm, FormName, AntiforgeryToken, Enhance), and @bind for simple interactive controls. DO NOT USE for project scaffolding (see create-blazor-project) or prerendering issues (see support-prerendering).",
+      "path": ".pmcro/plugins/dotnet-blazor/skills/collect-user-input"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-blazor:configure-auth",
+      "plugin": "dotnet-blazor",
+      "skill": "configure-auth",
+      "description": ">",
+      "path": ".pmcro/plugins/dotnet-blazor/skills/configure-auth"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-blazor:coordinate-components",
+      "plugin": "dotnet-blazor",
+      "skill": "coordinate-components",
+      "description": ">",
+      "path": ".pmcro/plugins/dotnet-blazor/skills/coordinate-components"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-blazor:create-blazor-project",
+      "plugin": "dotnet-blazor",
+      "skill": "create-blazor-project",
+      "description": ">",
+      "path": ".pmcro/plugins/dotnet-blazor/skills/create-blazor-project"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-blazor:fetch-and-send-data",
+      "plugin": "dotnet-blazor",
+      "skill": "fetch-and-send-data",
+      "description": "Call APIs, load data into components, and handle the async lifecycle in Blazor. USE FOR fetching data from a backend, submitting data to an API, displaying loading/error states, registering HttpClient, building service abstractions for Auto/WebAssembly render modes. DO NOT USE for form validation (see collect-user-input), prerendering persistence (see support-prerendering), or project scaffolding (see create-blazor-project).",
+      "path": ".pmcro/plugins/dotnet-blazor/skills/fetch-and-send-data"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-blazor:plan-ui-change",
+      "plugin": "dotnet-blazor",
+      "skill": "plan-ui-change",
+      "description": ">",
+      "path": ".pmcro/plugins/dotnet-blazor/skills/plan-ui-change"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-blazor:support-prerendering",
+      "plugin": "dotnet-blazor",
+      "skill": "support-prerendering",
+      "description": "Make interactive Blazor components work correctly with prerendering. USE FOR fixing duplicate data loads, UI flicker during prerender-to-interactive handoff, null references during prerender, persisting state across prerender, disabling prerendering, excluding pages from interactive routing, or detecting whether a component is currently prerendering. DO NOT USE for choosing which render mode to use (see create-blazor-project) or general component authoring (see author-component).",
+      "path": ".pmcro/plugins/dotnet-blazor/skills/support-prerendering"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-blazor:use-igniteui-blazor",
+      "plugin": "dotnet-blazor",
+      "skill": "use-igniteui-blazor",
+      "description": ">",
+      "path": ".pmcro/plugins/dotnet-blazor/skills/use-igniteui-blazor"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-blazor:use-js-interop",
+      "plugin": "dotnet-blazor",
+      "skill": "use-js-interop",
+      "description": ">",
+      "path": ".pmcro/plugins/dotnet-blazor/skills/use-js-interop"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-data:create-datadriven-aspnetcore",
+      "plugin": "dotnet-data",
+      "skill": "create-datadriven-aspnetcore",
+      "description": "Generate or scaffold ASP.NET Core code — Razor Pages, Blazor components, MVC controllers, views, and Minimal API endpoints — without using ASP.NET Core CLI scaffolding/code-generation tools. Use when (1) adding CRUD pages, views, or API endpoints backed by Entity Framework (EF Core) and a database, (2) generating code to create, read, update, and delete data using a DbContext, (3) scaffolding UI components that match the project's existing CSS framework and coding patterns, or (4) creating data-driven forms, tables, and navigation for a model class. Do not use for non-ASP.NET projects or when CLI-based scaffolding is preferred.",
+      "path": ".pmcro/plugins/dotnet-data/skills/create-datadriven-aspnetcore"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-data:optimizing-ef-core-queries",
+      "plugin": "dotnet-data",
+      "skill": "optimizing-ef-core-queries",
+      "description": "Optimize and improve the performance of slow Entity Framework Core (EF Core) queries: make them generate less SQL, make fewer database round-trips, and return results faster. Use whenever an EF Core or DbContext query or data-access path is slow or should be made faster — whether or not EF Core owns the database schema. For EF Core, not Dapper or raw ADO.NET.",
+      "path": ".pmcro/plugins/dotnet-data/skills/optimizing-ef-core-queries"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-diag:analyzing-dotnet-performance",
+      "plugin": "dotnet-diag",
+      "skill": "analyzing-dotnet-performance",
+      "description": ">-",
+      "path": ".pmcro/plugins/dotnet-diag/skills/analyzing-dotnet-performance"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-diag:android-tombstone-symbolication",
+      "plugin": "dotnet-diag",
+      "skill": "android-tombstone-symbolication",
+      "description": "Symbolicate the .NET runtime frames in an Android tombstone file. Extracts BuildIds and PC offsets from the native backtrace, downloads debug symbols from the Microsoft symbol server, and runs llvm-symbolizer to produce function names with source file and line numbers. USE FOR triaging a .NET MAUI or Mono Android app crash from a tombstone, resolving native backtrace frames in libmonosgen-2.0.so or libcoreclr.so to .NET runtime source code, or investigating SIGABRT, SIGSEGV, or other native signals originating from the .NET runtime on Android. DO NOT USE FOR pure Java/Kotlin crashes, managed .NET exceptions that are already captured in logcat, or iOS crash logs. INVOKES Symbolicate-Tombstone.ps1 script, llvm-symbolizer, Microsoft symbol server.",
+      "path": ".pmcro/plugins/dotnet-diag/skills/android-tombstone-symbolication"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-diag:apple-crash-symbolication",
+      "plugin": "dotnet-diag",
+      "skill": "apple-crash-symbolication",
+      "description": "Symbolicate .NET runtime frames in Apple platform .ips crash logs (iOS, tvOS, Mac Catalyst, macOS). Extracts UUIDs and addresses from the native backtrace, locates dSYM debug symbols, and runs atos to produce function names with source file and line numbers. Automatically downloads .dwarf symbols from the Microsoft symbol server using Mach-O UUIDs. USE FOR triaging a .NET MAUI or Mono app crash from an .ips file on any Apple platform, resolving native backtrace frames in libcoreclr or libmonosgen-2.0 to .NET runtime source code, retrieving .ips crash logs from a connected iOS device or iPhone, or investigating EXC_CRASH, EXC_BAD_ACCESS, SIGABRT, or SIGSEGV originating from the .NET runtime. DO NOT USE FOR pure Swift/Objective-C crashes with no .NET components, or Android tombstone files. INVOKES Symbolicate-Crash.ps1 script, atos, dwarfdump, idevicecrashreport.",
+      "path": ".pmcro/plugins/dotnet-diag/skills/apple-crash-symbolication"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-diag:clr-activation-debugging",
+      "plugin": "dotnet-diag",
+      "skill": "clr-activation-debugging",
+      "description": ">-",
+      "path": ".pmcro/plugins/dotnet-diag/skills/clr-activation-debugging"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-diag:dotnet-trace-collect",
+      "plugin": "dotnet-diag",
+      "skill": "dotnet-trace-collect",
+      "description": "Guide developers through capturing diagnostic artifacts to diagnose production .NET performance issues. Use when the user needs help choosing diagnostic tools, collecting performance data, or understanding tool trade-offs across different environments (Windows/Linux, .NET Framework/modern .NET, container/non-container).",
+      "path": ".pmcro/plugins/dotnet-diag/skills/dotnet-trace-collect"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-diag:dump-collect",
+      "plugin": "dotnet-diag",
+      "skill": "dump-collect",
+      "description": "Configure and collect crash dumps for modern .NET applications. USE FOR: enabling automatic crash dumps for CoreCLR or NativeAOT, capturing dumps from running .NET processes, setting up dump collection in Docker or Kubernetes, using dotnet-dump collect or createdump. DO NOT USE FOR: analyzing or debugging dumps, post-mortem investigation with lldb/windbg/dotnet-dump analyze, profiling or tracing, or for .NET Framework processes.",
+      "path": ".pmcro/plugins/dotnet-diag/skills/dump-collect"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-diag:microbenchmarking",
+      "plugin": "dotnet-diag",
+      "skill": "microbenchmarking",
+      "description": ">",
+      "path": ".pmcro/plugins/dotnet-diag/skills/microbenchmarking"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-experimental:exp-mock-usage-analysis",
+      "plugin": "dotnet-experimental",
+      "skill": "exp-mock-usage-analysis",
+      "description": "Audits .NET test mock usage by tracing each mock setup through the production code's execution path to find dead, unreachable, redundant, or replaceable mocks. Use when the user asks to audit mock usage, find unused or unnecessary mock setups, check if mocks are needed, reduce mock duplication or over-mocking, simplify test setup, or review whether mock configurations like ILogger/IOptions should use real implementations instead. Supports Moq, NSubstitute, and FakeItEasy.",
+      "path": ".pmcro/plugins/dotnet-experimental/skills/exp-mock-usage-analysis"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-experimental:exp-test-maintainability",
+      "plugin": "dotnet-experimental",
+      "skill": "exp-test-maintainability",
+      "description": "Detects duplicate boilerplate, copy-paste tests, and structural maintainability issues across .NET test suites. Use when the user asks to reduce repetition, consolidate similar test methods, convert copy-paste tests to data-driven parameterized tests, suggest a better test structure, or identify refactoring opportunities. Identifies repeated construction, assertion patterns, copy-paste methods convertible to DataRow/Theory/TestCase, redundant setup/teardown, and shared infrastructure. Produces an analysis report with concrete before/after suggestions. Works with MSTest, xUnit, NUnit, and TUnit. DO NOT USE FOR: writing new tests (use writing-mstest-tests), reviewing test quality or anti-patterns (use test-anti-patterns), or deep mock auditing (use exp-mock-usage-analysis).",
+      "path": ".pmcro/plugins/dotnet-experimental/skills/exp-test-maintainability"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-maui:dotnet-maui-doctor",
+      "plugin": "dotnet-maui",
+      "skill": "dotnet-maui-doctor",
+      "description": ">-",
+      "path": ".pmcro/plugins/dotnet-maui/skills/dotnet-maui-doctor"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-maui:maui-app-lifecycle",
+      "plugin": "dotnet-maui",
+      "skill": "maui-app-lifecycle",
+      "description": ">-",
+      "path": ".pmcro/plugins/dotnet-maui/skills/maui-app-lifecycle"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-maui:maui-collectionview",
+      "plugin": "dotnet-maui",
+      "skill": "maui-collectionview",
+      "description": ">",
+      "path": ".pmcro/plugins/dotnet-maui/skills/maui-collectionview"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-maui:maui-data-binding",
+      "plugin": "dotnet-maui",
+      "skill": "maui-data-binding",
+      "description": ">-",
+      "path": ".pmcro/plugins/dotnet-maui/skills/maui-data-binding"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-maui:maui-dependency-injection",
+      "plugin": "dotnet-maui",
+      "skill": "maui-dependency-injection",
+      "description": ">",
+      "path": ".pmcro/plugins/dotnet-maui/skills/maui-dependency-injection"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-maui:maui-safe-area",
+      "plugin": "dotnet-maui",
+      "skill": "maui-safe-area",
+      "description": ">-",
+      "path": ".pmcro/plugins/dotnet-maui/skills/maui-safe-area"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-maui:maui-shell-navigation",
+      "plugin": "dotnet-maui",
+      "skill": "maui-shell-navigation",
+      "description": ">-",
+      "path": ".pmcro/plugins/dotnet-maui/skills/maui-shell-navigation"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-maui:maui-theming",
+      "plugin": "dotnet-maui",
+      "skill": "maui-theming",
+      "description": ">-",
+      "path": ".pmcro/plugins/dotnet-maui/skills/maui-theming"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-msbuild:binlog-failure-analysis",
+      "plugin": "dotnet-msbuild",
+      "skill": "binlog-failure-analysis",
+      "description": "Analyze MSBuild binary logs to diagnose build failures. USE FOR: build errors that are unclear from console output, diagnosing cascading failures across multi-project builds, tracing MSBuild target execution order, and generally any MSBuild build issues. Requires an existing .binlog file. DO NOT USE FOR: generating binlogs (use binlog-generation), non-MSBuild build systems.",
+      "path": ".pmcro/plugins/dotnet-msbuild/skills/binlog-failure-analysis"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-msbuild:binlog-generation",
+      "plugin": "dotnet-msbuild",
+      "skill": "binlog-generation",
+      "description": "Generate MSBuild binary logs (binlogs) for build diagnostics and analysis. USE FOR: adding /bl:{} to any dotnet build, test, pack, publish, or restore command to capture a full build execution trace, prerequisite for binlog-failure-analysis and build-perf-diagnostics skills, enabling post-build investigation of errors or performance. Requires MSBuild 17.8+ / .NET 8 SDK+ for {} placeholder; PowerShell must quote the complete switch as '-bl:{}'. DO NOT USE FOR: non-MSBuild build systems (npm, Maven, CMake), analyzing an existing binlog (use binlog-failure-analysis instead).",
+      "path": ".pmcro/plugins/dotnet-msbuild/skills/binlog-generation"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-msbuild:build-parallelism",
+      "plugin": "dotnet-msbuild",
+      "skill": "build-parallelism",
+      "description": "Analyze an MSBuild solution, solution filter, or Build.proj that schedules multiple project files. USE FOR: measured idle worker nodes, `-m` that does not scale, a serial ProjectReference critical path, graph builds, or an MSBuild task that builds a Projects list. Requires at least two distinct project files whose scheduling or throughput must be analyzed. DO NOT USE for non-MSBuild build systems.",
+      "path": ".pmcro/plugins/dotnet-msbuild/skills/build-parallelism"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-msbuild:build-perf-baseline",
+      "plugin": "dotnet-msbuild",
+      "skill": "build-perf-baseline",
+      "description": "Establish MSBuild/.NET build performance baselines before optimizing. USE FOR: a .NET build or solution that is slow or has build-performance concerns; cold, warm, incremental, or no-op measurements; before/after comparisons; CI build output caching; static graph build decisions; artifacts output; and dependency graph trimming. Start here before build-perf-diagnostics, incremental-build, or build-parallelism. DO NOT USE for webpack, npm, JavaScript bundlers, or other non-MSBuild build systems. For detailed target/task/analyzer bottleneck analysis after baselining, use build-perf-diagnostics.",
+      "path": ".pmcro/plugins/dotnet-msbuild/skills/build-perf-baseline"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-msbuild:build-perf-diagnostics",
+      "plugin": "dotnet-msbuild",
+      "skill": "build-perf-diagnostics",
+      "description": "Diagnose MSBuild build performance bottlenecks using binary log analysis. USE FOR: identifying why builds are slow by analyzing binlog performance summaries, detecting ResolveAssemblyReference (RAR) taking >5s, Roslyn analyzers consuming >30% of Csc time, single targets dominating >50% of build time, node utilization below 80%, excessive Copy tasks, NuGet restore running every build. Covers timeline analysis, Target/Task Performance Summary interpretation, and 7 common bottleneck categories. Use after build-perf-baseline has established measurements. DO NOT USE FOR: establishing initial baselines (use build-perf-baseline first), fixing incremental build issues (use incremental-build), parallelism tuning (use build-parallelism), non-MSBuild build systems.",
+      "path": ".pmcro/plugins/dotnet-msbuild/skills/build-perf-diagnostics"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-msbuild:check-bin-obj-clash",
+      "plugin": "dotnet-msbuild",
+      "skill": "check-bin-obj-clash",
+      "description": "Detects MSBuild projects with conflicting OutputPath or IntermediateOutputPath. USE FOR: builds failing with 'Cannot create a file when that file already exists', 'The process cannot access the file because it is being used by another process', intermittent build failures that succeed on retry, or missing/overwritten outputs in multi-project or multi-targeting builds where bin/obj (or project.assets.json) collide. Common causes: shared OutputPath, missing AppendTargetFrameworkToOutputPath, extra global properties (e.g. PublishReadyToRun), or SetTargetFramework on a ProjectReference to a single-targeting project. DO NOT USE FOR: file access errors unrelated to MSBuild (OS-level locking), single-project single-TFM builds, non-MSBuild build systems.",
+      "path": ".pmcro/plugins/dotnet-msbuild/skills/check-bin-obj-clash"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-msbuild:copy-to-output-directory",
+      "plugin": "dotnet-msbuild",
+      "skill": "copy-to-output-directory",
+      "description": "Choosing an MSBuild CopyToOutputDirectory / CopyToPublishDirectory mode: Never, PreserveNewest, Always, and IfDifferent (MSBuild 17.13+), plus $(SkipUnchangedFilesOnCopyAlways). USE FOR: removing the per-build Always copy perf hit; resetting output files mutated between builds. DO NOT USE FOR: general incremental-build diagnosis (use incremental-build); non-MSBuild build systems.",
+      "path": ".pmcro/plugins/dotnet-msbuild/skills/copy-to-output-directory"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-msbuild:directory-build-organization",
+      "plugin": "dotnet-msbuild",
+      "skill": "directory-build-organization",
+      "description": "USE ONLY for (1) two or more projects with repeated MSBuild policy, targets, or package versions, or (2) an existing Directory.Build.props/targets/rsp hierarchy with an import, placement, or layering defect. A one-project repo without an existing Directory.Build file is outside scope; do not load this skill. Covers centralizing shared policy and targets, Directory.Packages.props across projects, parent hierarchy/import structure, props-versus-targets placement, and folder/project exceptions. An existing hierarchy defect remains in scope when only one project is affected. For property value or condition semantics use property-patterns. Exclude legacy-to-SDK migration and non-MSBuild systems.",
+      "path": ".pmcro/plugins/dotnet-msbuild/skills/directory-build-organization"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-msbuild:eval-performance",
+      "plugin": "dotnet-msbuild",
+      "skill": "eval-performance",
+      "description": "Guide for diagnosing and improving MSBuild project evaluation performance. USE FOR: builds slow before any compilation starts, high evaluation time in binlog analysis, expensive glob patterns walking large directories (node_modules, .git, bin/obj), deep import chains (>20 levels), preprocessed output >10K lines indicating heavy evaluation, property functions with file I/O ($([System.IO.File]::ReadAllText(...))), multiple evaluations per project. Covers the 5 MSBuild evaluation phases, glob optimization via DefaultItemExcludes, import chain analysis with /pp preprocessing. DO NOT USE FOR: compilation-time slowness (use build-perf-diagnostics), incremental build issues (use incremental-build), non-MSBuild build systems.",
+      "path": ".pmcro/plugins/dotnet-msbuild/skills/eval-performance"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-msbuild:extension-points",
+      "plugin": "dotnet-msbuild",
+      "skill": "extension-points",
+      "description": "Own MSBuild import and hook discovery. USE FOR: CustomBefore/CustomAfter hooks, ordered wildcard and NuGet auto-imports, control properties, build/buildTransitive packed layout, package ID and file-name matching, per-TFM forwarders, and tracing why assets or hooks are missing, broken, or replaced. An import guard remains in scope when it is one defect in a broader hook/import flow. DO NOT USE for a focused safety verdict on whether one specific Import needs Exists or is an intentionally unguarded package contract; use msbuild-antipatterns. NEVER INVOKE when imports and hook placement already work and the request is only target Inputs/Outputs, incremental skipping, or FileWrites clean tracking; use incremental-build or target-authoring. Exclude props-versus-targets placement and non-MSBuild systems.",
+      "path": ".pmcro/plugins/dotnet-msbuild/skills/extension-points"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-msbuild:including-generated-files",
+      "plugin": "dotnet-msbuild",
+      "skill": "including-generated-files",
+      "description": "Own MSBuild generated-artifact integration. USE FOR: a target that creates or should create source, Content, None, or another physical file but the artifact is missing from compilation or output; target timing; evaluation-time glob misses; $(IntermediateOutputPath) placement; and FileWrites clean tracking. The prompt may describe the generated artifact without naming the producing task. DO NOT USE when the primary defect is general Include/Remove/Update semantics, item metadata or batching, duplicate/overlapping declarations, or a generated-item identity relationship; use item-management. Exclude Roslyn source-generator internals and non-MSBuild systems.",
+      "path": ".pmcro/plugins/dotnet-msbuild/skills/including-generated-files"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-msbuild:incremental-build",
+      "plugin": "dotnet-msbuild",
+      "skill": "incremental-build",
+      "description": "Guide for optimizing MSBuild incremental builds. USE FOR: builds slower than expected on subsequent runs, 'nothing changed but it rebuilds anyway', diagnosing why targets re-execute unnecessarily, fixing broken no-op builds. Covers 8 common causes: missing Inputs/Outputs on custom targets, volatile properties in output paths (timestamps/GUIDs), file writes outside tracked Outputs, missing FileWrites registration, glob changes, Visual Studio Fast Up-to-Date Check (FUTDC) issues. Key diagnostic: look for 'Building target completely' vs 'Skipping target' in binlog. DO NOT USE FOR: first-time build slowness (use build-perf-baseline), parallelism issues (use build-parallelism), evaluation-phase slowness (use eval-performance), non-MSBuild build systems.",
+      "path": ".pmcro/plugins/dotnet-msbuild/skills/incremental-build"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-msbuild:item-management",
+      "plugin": "dotnet-msbuild",
+      "skill": "item-management",
+      "description": "Own concrete MSBuild ItemGroup and item-expression questions. USE FOR: Include, Remove, Update, item identity and metadata, transforms, filtering, batching, duplicate or overlapping items, and reviews that verify whether those operations are correct. Generated items stay in scope when the central defect is item identity, metadata, batching, duplicate declarations, or glob/Remove/Update semantics. For a generated artifact missing from compilation or output, wrong target timing/path, or FileWrites clean tracking without a broader item-semantics defect, use including-generated-files. The item operation may be broken, suspected, or already correct. Exclude property-only issues, general incrementality with no item question, broad reviews with no concrete item concern, and non-MSBuild systems.",
+      "path": ".pmcro/plugins/dotnet-msbuild/skills/item-management"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-msbuild:msbuild-antipatterns",
+      "plugin": "dotnet-msbuild",
+      "skill": "msbuild-antipatterns",
+      "description": "DO NOT INVOKE when the primary request explicitly asks to convert, migrate, modernize, or rewrite a legacy/old-style project to SDK style; use msbuild-modernization. Migration prompts often mention ToolsVersion, explicit Compile/Reference entries, packages.config, or Microsoft.CSharp.targets, but merely reviewing or auditing a file that contains those patterns remains in scope here. USE FOR broad review, audit, lint, or maintainability/correctness checks of project/build files, including custom targets; prioritized cross-cutting findings; discrete anti-patterns; F# ordering/FS0039; cross-platform paths; and focused Import safety verdicts. Review/audit is analysis-only unless fixes are requested. For concrete property/item defects use property-patterns/item-management; use target-authoring for implementation and extension-points for NuGet auto-import/layout discovery. Exclude non-MSBuild systems.",
+      "path": ".pmcro/plugins/dotnet-msbuild/skills/msbuild-antipatterns"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-msbuild:msbuild-modernization",
+      "plugin": "dotnet-msbuild",
+      "skill": "msbuild-modernization",
+      "description": "Guide for modernizing and migrating MSBuild project files to SDK-style format. USE FOR: converting legacy .csproj/.vbproj with verbose XML to SDK-style, migrating packages.config to PackageReference, removing Properties/AssemblyInfo.cs in favor of auto-generation, eliminating explicit Compile Include lists via implicit globbing, consolidating shared settings into Directory.Build.props. Indicators of legacy projects: ToolsVersion attribute, an Import of Microsoft.CSharp.targets via $(MSBuildToolsPath), .csproj files over 50 lines for simple projects. DO NOT USE FOR: projects already in SDK-style format, non-.NET build systems (npm, Maven, CMake), .NET Framework projects that cannot move to SDK-style.",
+      "path": ".pmcro/plugins/dotnet-msbuild/skills/msbuild-modernization"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-msbuild:property-patterns",
+      "plugin": "dotnet-msbuild",
+      "skill": "property-patterns",
+      "description": "Diagnose and fix concrete MSBuild property defects in projects and existing shared-file hierarchies. USE FOR: conditions, defaults, append versus overwrite, last-write-wins values, OS/TFM checks, portable paths, normalization, and reviews centered on those property defects. Property defects in Directory.Build.* remain in scope, including overwritten values across parent/child imports and conditions that run before TargetFramework is set, even when the fix changes import order or moves a property group to .targets. DO NOT USE FOR: placement-only or import-only requests with no concrete property defect, such as discovering shared files or choosing which file owns a target or customization (use directory-build-organization); item operations; target structure; broad reviews without a concrete property defect; non-MSBuild work.",
+      "path": ".pmcro/plugins/dotnet-msbuild/skills/property-patterns"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-msbuild:resolve-project-references",
+      "plugin": "dotnet-msbuild",
+      "skill": "resolve-project-references",
+      "description": "Guide for interpreting ResolveProjectReferences time in MSBuild performance summaries. Activate when ResolveProjectReferences appears as the most expensive target and developers are trying to optimize it directly. Explains that the reported time includes wait time for dependent project builds and is misleading. Guides users to focus on task self-time instead. Do not activate for general build performance -- use build-perf-diagnostics instead.",
+      "path": ".pmcro/plugins/dotnet-msbuild/skills/resolve-project-references"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-msbuild:target-authoring",
+      "plugin": "dotnet-msbuild",
+      "skill": "target-authoring",
+      "description": "Canonical patterns for writing custom MSBuild targets. USE FOR: diagnosing and fixing custom target authoring anti-patterns; broken SDK target chains across files (e.g., Directory.Build.targets silently redefining SDK targets); targets that replace CompileDependsOn instead of extending it with $(CompileDependsOn); query targets returning stale results from Outputs vs Returns misuse; missing Inputs/Outputs causing unnecessary rebuilds; missing FileWrites registration. Covers DependsOnTargets vs BeforeTargets vs AfterTargets, the Build→CoreBuild three-level pattern, and the $(XxxDependsOn) chain-extension pattern. DO NOT USE FOR: incremental build tuning (use incremental-build), parallelization (use build-parallelism), general anti-patterns (use msbuild-antipatterns), non-MSBuild build systems.",
+      "path": ".pmcro/plugins/dotnet-msbuild/skills/target-authoring"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-nuget:convert-to-cpm",
+      "plugin": "dotnet-nuget",
+      "skill": "convert-to-cpm",
+      "description": ">",
+      "path": ".pmcro/plugins/dotnet-nuget/skills/convert-to-cpm"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-repo-authoring:authoring-github-workflows",
+      "plugin": "dotnet-repo-authoring",
+      "skill": "authoring-github-workflows",
+      "description": "Author and review GitHub Actions workflow YAML safely so syntactically-valid YAML can't ship a workflow that GitHub Actions refuses to run. USE FOR: editing, adding, or reviewing any file under .github/workflows/, writing run-name/name/if/env/run values that contain ${{ }} expressions, diagnosing a run that fails with 'This run likely failed because of a workflow file issue' and no jobs starting, deciding when a workflow scalar must be quoted, validating workflows with actionlint. DO NOT USE FOR: authoring application YAML unrelated to GitHub Actions, Azure Pipelines, GitLab CI, or non-workflow YAML. SCOPE: this skill covers *syntactic/structural* correctness of workflow YAML (quoting, parsing, actionlint); for *semantic and functional* workflow design (what a workflow should do, agentic-workflow behavior), see .github/agents/agentic-workflows.agent.md — the two are complementary. INVOKES: actionlint (downloaded pinned binary) plus git/grep for inspection.",
+      "path": ".pmcro/plugins/dotnet-repo-authoring/skills/authoring-github-workflows"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-repo-authoring:create-custom-agent",
+      "plugin": "dotnet-repo-authoring",
+      "skill": "create-custom-agent",
+      "description": "Creates VS Code custom agent files (.agent.md) for specialized AI personas with tools, instructions, and handoffs. Use when scaffolding new custom agents, configuring agent workflows, or setting up agent-to-agent handoffs.",
+      "path": ".pmcro/plugins/dotnet-repo-authoring/skills/create-custom-agent"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-repo-authoring:create-skill",
+      "plugin": "dotnet-repo-authoring",
+      "skill": "create-skill",
+      "description": "Scaffolds new agent skills for the dotnet/skills repository. Use when creating a new skill, generating SKILL.md files, writing a skill description that the runtime will actually route to, or setting up skill directory structures. Handles frontmatter generation, section templates, and validation guidance. Do not use for fixing a skill that already fails its evaluation (use improve-skill-quality) or for writing eval.yaml (use create-skill-test).",
+      "path": ".pmcro/plugins/dotnet-repo-authoring/skills/create-skill"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-repo-authoring:create-skill-test",
+      "plugin": "dotnet-repo-authoring",
+      "skill": "create-skill-test",
+      "description": "Scaffolds eval.yaml evaluation specs for skills, custom agents, and redistributable gh-aw workflow packages in the dotnet/skills repository. Use when creating skill or workflow-package tests, writing evaluation stimuli, defining graders and rubrics, sizing an eval for statistical power, or setting up test fixture files. Handles the Vally eval.yaml schema, fixture organization, and overfitting avoidance. Do not use for running or debugging existing evals (use improve-skill-quality) nor for skills authoring (use create-skill).",
+      "path": ".pmcro/plugins/dotnet-repo-authoring/skills/create-skill-test"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-repo-authoring:improve-skill-quality",
+      "plugin": "dotnet-repo-authoring",
+      "skill": "improve-skill-quality",
+      "description": "Diagnoses and fixes skills in the dotnet/skills repository that lose to their own baseline, fail to activate, time out, or return 'no credible improvement'. Use when an evaluation verdict is a regression or underpowered, when a skill regressed after a change, when /evaluate reports no results, or when deciding whether a weak skill should be strengthened or retired. Do not use for scaffolding a brand-new skill (use create-skill) or a brand-new eval (use create-skill-test).",
+      "path": ".pmcro/plugins/dotnet-repo-authoring/skills/improve-skill-quality"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-template-engine:template-authoring",
+      "plugin": "dotnet-template-engine",
+      "skill": "template-authoring",
+      "description": ">",
+      "path": ".pmcro/plugins/dotnet-template-engine/skills/template-authoring"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-template-engine:template-comparison",
+      "plugin": "dotnet-template-engine",
+      "skill": "template-comparison",
+      "description": ">",
+      "path": ".pmcro/plugins/dotnet-template-engine/skills/template-comparison"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-template-engine:template-discovery",
+      "plugin": "dotnet-template-engine",
+      "skill": "template-discovery",
+      "description": ">",
+      "path": ".pmcro/plugins/dotnet-template-engine/skills/template-discovery"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-template-engine:template-instantiation",
+      "plugin": "dotnet-template-engine",
+      "skill": "template-instantiation",
+      "description": ">",
+      "path": ".pmcro/plugins/dotnet-template-engine/skills/template-instantiation"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-template-engine:template-smart-defaults",
+      "plugin": "dotnet-template-engine",
+      "skill": "template-smart-defaults",
+      "description": ">",
+      "path": ".pmcro/plugins/dotnet-template-engine/skills/template-smart-defaults"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-template-engine:template-validation",
+      "plugin": "dotnet-template-engine",
+      "skill": "template-validation",
+      "description": ">",
+      "path": ".pmcro/plugins/dotnet-template-engine/skills/template-validation"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-test:assertion-quality",
+      "plugin": "dotnet-test",
+      "skill": "assertion-quality",
+      "description": "Analyze assertion quality, depth, variety, and false confidence in existing tests. ALWAYS USE when asked about weak, shallow, trivial, always-true, self-referential, assertion-free, presence/truthiness-only, or insufficiently diverse assertions, including MSTest, Jest, pytest, and Go. DO NOT USE for direct fixes: writing-mstest-tests owns supplied MSTest assertions; code-testing owns new cases. Use test-gap-analysis when asked whether tests would catch a production change, and test-anti-patterns for general severity-ranked audits.",
+      "path": ".pmcro/plugins/dotnet-test/skills/assertion-quality"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-test:code-testing",
+      "plugin": "dotnet-test",
+      "skill": "code-testing",
+      "description": ">-",
+      "path": ".pmcro/plugins/dotnet-test/skills/code-testing"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-test:code-testing-agent",
+      "plugin": "dotnet-test",
+      "skill": "code-testing-agent",
+      "description": ">-",
+      "path": ".pmcro/plugins/dotnet-test/skills/code-testing-agent"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-test:code-testing-extensions",
+      "plugin": "dotnet-test",
+      "skill": "code-testing-extensions",
+      "description": ">-",
+      "path": ".pmcro/plugins/dotnet-test/skills/code-testing-extensions"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-test:coverage-analysis",
+      "plugin": "dotnet-test",
+      "skill": "coverage-analysis",
+      "description": ">",
+      "path": ".pmcro/plugins/dotnet-test/skills/coverage-analysis"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-test:crap-score",
+      "plugin": "dotnet-test",
+      "skill": "crap-score",
+      "description": ">",
+      "path": ".pmcro/plugins/dotnet-test/skills/crap-score"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-test:detect-static-dependencies",
+      "plugin": "dotnet-test",
+      "skill": "detect-static-dependencies",
+      "description": ">",
+      "path": ".pmcro/plugins/dotnet-test/skills/detect-static-dependencies"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-test:filter-syntax",
+      "plugin": "dotnet-test",
+      "skill": "filter-syntax",
+      "description": "Reference-only filter syntax for VSTest and MTP with MSTest, NUnit, xUnit v3, and TUnit. Load only after the platform/framework is known and a consumer needs to create or translate a filter. Do not load for unfiltered runs or platform detection. Used by run-tests and mtp-hot-reload; never invoke directly.",
+      "path": ".pmcro/plugins/dotnet-test/skills/filter-syntax"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-test:find-untested-sources",
+      "plugin": "dotnet-test",
+      "skill": "find-untested-sources",
+      "description": ">",
+      "path": ".pmcro/plugins/dotnet-test/skills/find-untested-sources"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-test:generate-testability-wrappers",
+      "plugin": "dotnet-test",
+      "skill": "generate-testability-wrappers",
+      "description": ">",
+      "path": ".pmcro/plugins/dotnet-test/skills/generate-testability-wrappers"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-test:grade-tests",
+      "plugin": "dotnet-test",
+      "skill": "grade-tests",
+      "description": ">",
+      "path": ".pmcro/plugins/dotnet-test/skills/grade-tests"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-test:migrate-static-to-wrapper",
+      "plugin": "dotnet-test",
+      "skill": "migrate-static-to-wrapper",
+      "description": ">",
+      "path": ".pmcro/plugins/dotnet-test/skills/migrate-static-to-wrapper"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-test:mtp-hot-reload",
+      "plugin": "dotnet-test",
+      "skill": "mtp-hot-reload",
+      "description": ">",
+      "path": ".pmcro/plugins/dotnet-test/skills/mtp-hot-reload"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-test:platform-detection",
+      "plugin": "dotnet-test",
+      "skill": "platform-detection",
+      "description": ">-",
+      "path": ".pmcro/plugins/dotnet-test/skills/platform-detection"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-test:run-tests",
+      "plugin": "dotnet-test",
+      "skill": "run-tests",
+      "description": ">-",
+      "path": ".pmcro/plugins/dotnet-test/skills/run-tests"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-test:scaffold-dotnet-test-project",
+      "plugin": "dotnet-test",
+      "skill": "scaffold-dotnet-test-project",
+      "description": ">-",
+      "path": ".pmcro/plugins/dotnet-test/skills/scaffold-dotnet-test-project"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-test:test-analysis-extensions",
+      "plugin": "dotnet-test",
+      "skill": "test-analysis-extensions",
+      "description": ">-",
+      "path": ".pmcro/plugins/dotnet-test/skills/test-analysis-extensions"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-test:test-anti-patterns",
+      "plugin": "dotnet-test",
+      "skill": "test-anti-patterns",
+      "description": ">",
+      "path": ".pmcro/plugins/dotnet-test/skills/test-anti-patterns"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-test:test-gap-analysis",
+      "plugin": "dotnet-test",
+      "skill": "test-gap-analysis",
+      "description": ">-",
+      "path": ".pmcro/plugins/dotnet-test/skills/test-gap-analysis"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-test:test-smell-detection",
+      "plugin": "dotnet-test",
+      "skill": "test-smell-detection",
+      "description": ">",
+      "path": ".pmcro/plugins/dotnet-test/skills/test-smell-detection"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-test:test-tagging",
+      "plugin": "dotnet-test",
+      "skill": "test-tagging",
+      "description": ">",
+      "path": ".pmcro/plugins/dotnet-test/skills/test-tagging"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-test:testability-obstacle",
+      "plugin": "dotnet-test",
+      "skill": "testability-obstacle",
+      "description": ">-",
+      "path": ".pmcro/plugins/dotnet-test/skills/testability-obstacle"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-test:writing-mstest-tests",
+      "plugin": "dotnet-test",
+      "skill": "writing-mstest-tests",
+      "description": ">",
+      "path": ".pmcro/plugins/dotnet-test/skills/writing-mstest-tests"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-test-migration:migrate-mstest-v1v2-to-v3",
+      "plugin": "dotnet-test-migration",
+      "skill": "migrate-mstest-v1v2-to-v3",
+      "description": ">",
+      "path": ".pmcro/plugins/dotnet-test-migration/skills/migrate-mstest-v1v2-to-v3"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-test-migration:migrate-mstest-v3-to-v4",
+      "plugin": "dotnet-test-migration",
+      "skill": "migrate-mstest-v3-to-v4",
+      "description": ">",
+      "path": ".pmcro/plugins/dotnet-test-migration/skills/migrate-mstest-v3-to-v4"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-test-migration:migrate-nunit-to-mstest",
+      "plugin": "dotnet-test-migration",
+      "skill": "migrate-nunit-to-mstest",
+      "description": ">",
+      "path": ".pmcro/plugins/dotnet-test-migration/skills/migrate-nunit-to-mstest"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-test-migration:migrate-vstest-to-mtp",
+      "plugin": "dotnet-test-migration",
+      "skill": "migrate-vstest-to-mtp",
+      "description": ">",
+      "path": ".pmcro/plugins/dotnet-test-migration/skills/migrate-vstest-to-mtp"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-test-migration:migrate-xunit-to-mstest",
+      "plugin": "dotnet-test-migration",
+      "skill": "migrate-xunit-to-mstest",
+      "description": ">",
+      "path": ".pmcro/plugins/dotnet-test-migration/skills/migrate-xunit-to-mstest"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-test-migration:migrate-xunit-to-xunit-v3",
+      "plugin": "dotnet-test-migration",
+      "skill": "migrate-xunit-to-xunit-v3",
+      "description": ">",
+      "path": ".pmcro/plugins/dotnet-test-migration/skills/migrate-xunit-to-xunit-v3"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-upgrade:dotnet-aot-compat",
+      "plugin": "dotnet-upgrade",
+      "skill": "dotnet-aot-compat",
+      "description": ">",
+      "path": ".pmcro/plugins/dotnet-upgrade/skills/dotnet-aot-compat"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-upgrade:migrate-dotnet10-to-dotnet11",
+      "plugin": "dotnet-upgrade",
+      "skill": "migrate-dotnet10-to-dotnet11",
+      "description": ">",
+      "path": ".pmcro/plugins/dotnet-upgrade/skills/migrate-dotnet10-to-dotnet11"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-upgrade:migrate-dotnet8-to-dotnet9",
+      "plugin": "dotnet-upgrade",
+      "skill": "migrate-dotnet8-to-dotnet9",
+      "description": ">",
+      "path": ".pmcro/plugins/dotnet-upgrade/skills/migrate-dotnet8-to-dotnet9"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-upgrade:migrate-dotnet9-to-dotnet10",
+      "plugin": "dotnet-upgrade",
+      "skill": "migrate-dotnet9-to-dotnet10",
+      "description": ">",
+      "path": ".pmcro/plugins/dotnet-upgrade/skills/migrate-dotnet9-to-dotnet10"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-upgrade:migrate-nullable-references",
+      "plugin": "dotnet-upgrade",
+      "skill": "migrate-nullable-references",
+      "description": ">",
+      "path": ".pmcro/plugins/dotnet-upgrade/skills/migrate-nullable-references"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-upgrade:thread-abort-migration",
+      "plugin": "dotnet-upgrade",
+      "skill": "thread-abort-migration",
+      "description": ">",
+      "path": ".pmcro/plugins/dotnet-upgrade/skills/thread-abort-migration"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-winforms:winforms-expert",
+      "plugin": "dotnet-winforms",
+      "skill": "winforms-expert",
+      "description": ">-",
+      "path": ".pmcro/plugins/dotnet-winforms/skills/winforms-expert"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-workflows:build-failure-analysis",
+      "plugin": "dotnet-workflows",
+      "skill": "build-failure-analysis",
+      "description": "Build Failure Analysis",
+      "path": ".pmcro/plugins/dotnet-workflows/skills/build-failure-analysis"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-workflows:msbuild-quality-review",
+      "plugin": "dotnet-workflows",
+      "skill": "msbuild-quality-review",
+      "description": "MSBuild Quality Review",
+      "path": ".pmcro/plugins/dotnet-workflows/skills/msbuild-quality-review"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-workflows:test-failure-analysis",
+      "plugin": "dotnet-workflows",
+      "skill": "test-failure-analysis",
+      "description": "Test Failure Analysis",
+      "path": ".pmcro/plugins/dotnet-workflows/skills/test-failure-analysis"
+    },
+    {
+      "route": "@dotnet-agent /dotnet-workflows:unskip-closed-tests",
+      "plugin": "dotnet-workflows",
+      "skill": "unskip-closed-tests",
+      "description": "Unskip Closed Tests",
+      "path": ".pmcro/plugins/dotnet-workflows/skills/unskip-closed-tests"
+    },
+    {
+      "route": "@dotnet-agent /dotnet11:system-text-json-net11",
+      "plugin": "dotnet11",
+      "skill": "system-text-json-net11",
+      "description": ">",
+      "path": ".pmcro/plugins/dotnet11/skills/system-text-json-net11"
+    },
+    {
+      "route": "@dotnet-agent /pmcro-dotnet:dotnet-marketplace",
+      "plugin": "pmcro-dotnet",
+      "skill": "dotnet-marketplace",
+      "description": "Inventory and byte-mirror dotnet/skills into a skills-only dotnet-agent marketplace with PMCR-O overlays, bounded batches, portable manifests, host catalogs and shared .agents to .pmcro skill discovery.",
+      "path": ".pmcro/plugins/pmcro-dotnet/skills/dotnet-marketplace"
+    },
+    {
+      "route": "@dotnet-agent /pmcro-dotnet:dotnet-toolchain",
+      "plugin": "pmcro-dotnet",
+      "skill": "dotnet-toolchain",
+      "description": "Check that installed .NET runtimes are intact and install a specific .NET runtime or SDK. Dry-run by default; changes the machine only with -Apply. Use before building or running .NET apps, or when dotnet fails to start.",
+      "path": ".pmcro/plugins/pmcro-dotnet/skills/dotnet-toolchain"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "system-text-json-net11",
+  "plugin": "dotnet11",
+  "independentSurface": true,
+  "independentChecker": false,
+  "sourceRef": "plugins/dotnet11/skills/system-text-json-net11",
+  "input": [
+    "seed",
+    "workspace",
+    "relativeScript",
+    "apply"
+  ],
+  "output": [
+    "source",
+    "command",
+    "exitCode",
+    "evidence",
+    "checker_handoff"
+  ]
+}

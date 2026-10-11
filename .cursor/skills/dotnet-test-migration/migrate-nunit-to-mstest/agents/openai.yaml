@@ -1,0 +1,4 @@
+interface:
+  display_name: "migrate-nunit-to-mstest"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $migrate-nunit-to-mstest through plugin dotnet-test-migration and preserve the pinned upstream source."

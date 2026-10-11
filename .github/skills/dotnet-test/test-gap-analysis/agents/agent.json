@@ -1,0 +1,20 @@
+{
+  "id": "test-gap-analysis",
+  "plugin": "dotnet-test",
+  "independentSurface": true,
+  "independentChecker": false,
+  "sourceRef": "plugins/dotnet-test/skills/test-gap-analysis",
+  "input": [
+    "seed",
+    "workspace",
+    "relativeScript",
+    "apply"
+  ],
+  "output": [
+    "source",
+    "command",
+    "exitCode",
+    "evidence",
+    "checker_handoff"
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "scaffold-dotnet-test-project"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $scaffold-dotnet-test-project through plugin dotnet-test and preserve the pinned upstream source."

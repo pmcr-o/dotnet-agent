@@ -1,0 +1,4 @@
+interface:
+  display_name: "dotnet-marketplace"
+  short_description: "Reusable PMCR-O skill workflow"
+sample_prompts_ref: "references/sample-prompts.md"

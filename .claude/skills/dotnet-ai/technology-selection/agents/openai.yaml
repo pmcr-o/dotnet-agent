@@ -1,0 +1,4 @@
+interface:
+  display_name: "technology-selection"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $technology-selection through plugin dotnet-ai and preserve the pinned upstream source."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "authoring-github-workflows"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $authoring-github-workflows through plugin dotnet-repo-authoring and preserve the pinned upstream source."

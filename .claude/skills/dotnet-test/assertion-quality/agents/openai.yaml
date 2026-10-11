@@ -1,0 +1,4 @@
+interface:
+  display_name: "assertion-quality"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $assertion-quality through plugin dotnet-test and preserve the pinned upstream source."

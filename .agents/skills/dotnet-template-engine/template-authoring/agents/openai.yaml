@@ -1,0 +1,4 @@
+interface:
+  display_name: "template-authoring"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $template-authoring through plugin dotnet-template-engine and preserve the pinned upstream source."

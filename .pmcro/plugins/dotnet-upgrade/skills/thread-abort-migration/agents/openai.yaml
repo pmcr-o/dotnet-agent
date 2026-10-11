@@ -1,0 +1,4 @@
+interface:
+  display_name: "thread-abort-migration"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $thread-abort-migration through plugin dotnet-upgrade and preserve the pinned upstream source."

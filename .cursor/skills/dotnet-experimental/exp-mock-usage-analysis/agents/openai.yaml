@@ -1,0 +1,4 @@
+interface:
+  display_name: "exp-mock-usage-analysis"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $exp-mock-usage-analysis through plugin dotnet-experimental and preserve the pinned upstream source."

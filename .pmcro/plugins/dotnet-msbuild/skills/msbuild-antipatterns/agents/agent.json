@@ -1,0 +1,20 @@
+{
+  "id": "msbuild-antipatterns",
+  "plugin": "dotnet-msbuild",
+  "independentSurface": true,
+  "independentChecker": false,
+  "sourceRef": "plugins/dotnet-msbuild/skills/msbuild-antipatterns",
+  "input": [
+    "seed",
+    "workspace",
+    "relativeScript",
+    "apply"
+  ],
+  "output": [
+    "source",
+    "command",
+    "exitCode",
+    "evidence",
+    "checker_handoff"
+  ]
+}

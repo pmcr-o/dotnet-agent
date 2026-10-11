@@ -1,0 +1,20 @@
+{
+  "id": "migrate-xunit-to-mstest",
+  "plugin": "dotnet-test-migration",
+  "independentSurface": true,
+  "independentChecker": false,
+  "sourceRef": "plugins/dotnet-test-migration/skills/migrate-xunit-to-mstest",
+  "input": [
+    "seed",
+    "workspace",
+    "relativeScript",
+    "apply"
+  ],
+  "output": [
+    "source",
+    "command",
+    "exitCode",
+    "evidence",
+    "checker_handoff"
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "grade-tests"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $grade-tests through plugin dotnet-test and preserve the pinned upstream source."

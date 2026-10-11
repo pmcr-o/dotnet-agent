@@ -1,0 +1,1 @@
+Forward test inventory, dry-run, bounded mirroring and verify against a clean upstream checkout. Prove byte equality for every resource and license. Verify all three junction paths discover the same files. Reject missing roots, duplicate skill names, stale/tampered content and existing output destinations. Validate generated host manifests independently.

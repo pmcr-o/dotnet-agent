@@ -1,0 +1,4 @@
+interface:
+  display_name: "target-authoring"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $target-authoring through plugin dotnet-msbuild and preserve the pinned upstream source."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "collect-user-input"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $collect-user-input through plugin dotnet-blazor and preserve the pinned upstream source."

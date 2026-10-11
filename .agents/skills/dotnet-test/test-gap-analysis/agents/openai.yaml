@@ -1,0 +1,4 @@
+interface:
+  display_name: "test-gap-analysis"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $test-gap-analysis through plugin dotnet-test and preserve the pinned upstream source."

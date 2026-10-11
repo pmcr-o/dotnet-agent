@@ -1,0 +1,4 @@
+interface:
+  display_name: "including-generated-files"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $including-generated-files through plugin dotnet-msbuild and preserve the pinned upstream source."

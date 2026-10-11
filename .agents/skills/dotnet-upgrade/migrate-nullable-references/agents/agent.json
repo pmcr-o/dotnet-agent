@@ -1,0 +1,20 @@
+{
+  "id": "migrate-nullable-references",
+  "plugin": "dotnet-upgrade",
+  "independentSurface": true,
+  "independentChecker": false,
+  "sourceRef": "plugins/dotnet-upgrade/skills/migrate-nullable-references",
+  "input": [
+    "seed",
+    "workspace",
+    "relativeScript",
+    "apply"
+  ],
+  "output": [
+    "source",
+    "command",
+    "exitCode",
+    "evidence",
+    "checker_handoff"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "eval-performance",
+  "plugin": "dotnet-msbuild",
+  "independentSurface": true,
+  "independentChecker": false,
+  "sourceRef": "plugins/dotnet-msbuild/skills/eval-performance",
+  "input": [
+    "seed",
+    "workspace",
+    "relativeScript",
+    "apply"
+  ],
+  "output": [
+    "source",
+    "command",
+    "exitCode",
+    "evidence",
+    "checker_handoff"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "skill": "system-text-json-net11",
+  "plugin": "dotnet11",
+  "source": "plugins/dotnet11/skills/system-text-json-net11",
+  "revision": "1d40f95ed0f2cdedfa4c9b2614b7c2035a4323cb",
+  "kind": "upstream-plugin-skill"
+}

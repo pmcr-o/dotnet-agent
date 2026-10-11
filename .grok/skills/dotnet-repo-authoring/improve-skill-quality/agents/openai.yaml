@@ -1,0 +1,4 @@
+interface:
+  display_name: "improve-skill-quality"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $improve-skill-quality through plugin dotnet-repo-authoring and preserve the pinned upstream source."

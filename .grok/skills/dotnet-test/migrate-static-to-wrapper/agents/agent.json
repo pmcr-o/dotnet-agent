@@ -1,0 +1,20 @@
+{
+  "id": "migrate-static-to-wrapper",
+  "plugin": "dotnet-test",
+  "independentSurface": true,
+  "independentChecker": false,
+  "sourceRef": "plugins/dotnet-test/skills/migrate-static-to-wrapper",
+  "input": [
+    "seed",
+    "workspace",
+    "relativeScript",
+    "apply"
+  ],
+  "output": [
+    "source",
+    "command",
+    "exitCode",
+    "evidence",
+    "checker_handoff"
+  ]
+}

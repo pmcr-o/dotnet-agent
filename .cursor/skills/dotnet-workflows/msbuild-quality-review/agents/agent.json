@@ -1,0 +1,20 @@
+{
+  "id": "msbuild-quality-review",
+  "plugin": "dotnet-workflows",
+  "independentSurface": true,
+  "independentChecker": false,
+  "sourceRef": "agentic-workflows/msbuild-quality-review",
+  "input": [
+    "seed",
+    "workspace",
+    "relativeScript",
+    "apply"
+  ],
+  "output": [
+    "source",
+    "command",
+    "exitCode",
+    "evidence",
+    "checker_handoff"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "skill": "exp-mock-usage-analysis",
+  "plugin": "dotnet-experimental",
+  "source": "plugins/dotnet-experimental/skills/exp-mock-usage-analysis",
+  "revision": "1d40f95ed0f2cdedfa4c9b2614b7c2035a4323cb",
+  "kind": "upstream-plugin-skill"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "create-blazor-project",
+  "plugin": "dotnet-blazor",
+  "independentSurface": true,
+  "independentChecker": false,
+  "sourceRef": "plugins/dotnet-blazor/skills/create-blazor-project",
+  "input": [
+    "seed",
+    "workspace",
+    "relativeScript",
+    "apply"
+  ],
+  "output": [
+    "source",
+    "command",
+    "exitCode",
+    "evidence",
+    "checker_handoff"
+  ]
+}

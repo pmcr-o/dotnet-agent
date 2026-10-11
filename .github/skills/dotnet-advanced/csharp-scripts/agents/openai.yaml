@@ -1,0 +1,4 @@
+interface:
+  display_name: "csharp-scripts"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $csharp-scripts through plugin dotnet-advanced and preserve the pinned upstream source."

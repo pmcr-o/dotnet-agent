@@ -1,0 +1,7 @@
+{
+  "skill": "winforms-expert",
+  "plugin": "dotnet-winforms",
+  "source": "plugins/dotnet-winforms/skills/winforms-expert",
+  "revision": "1d40f95ed0f2cdedfa4c9b2614b7c2035a4323cb",
+  "kind": "upstream-plugin-skill"
+}

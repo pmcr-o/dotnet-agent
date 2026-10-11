@@ -1,0 +1,20 @@
+{
+  "id": "template-discovery",
+  "plugin": "dotnet-template-engine",
+  "independentSurface": true,
+  "independentChecker": false,
+  "sourceRef": "plugins/dotnet-template-engine/skills/template-discovery",
+  "input": [
+    "seed",
+    "workspace",
+    "relativeScript",
+    "apply"
+  ],
+  "output": [
+    "source",
+    "command",
+    "exitCode",
+    "evidence",
+    "checker_handoff"
+  ]
+}

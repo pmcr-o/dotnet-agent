@@ -1,0 +1,20 @@
+{
+  "id": "migrate-dotnet9-to-dotnet10",
+  "plugin": "dotnet-upgrade",
+  "independentSurface": true,
+  "independentChecker": false,
+  "sourceRef": "plugins/dotnet-upgrade/skills/migrate-dotnet9-to-dotnet10",
+  "input": [
+    "seed",
+    "workspace",
+    "relativeScript",
+    "apply"
+  ],
+  "output": [
+    "source",
+    "command",
+    "exitCode",
+    "evidence",
+    "checker_handoff"
+  ]
+}

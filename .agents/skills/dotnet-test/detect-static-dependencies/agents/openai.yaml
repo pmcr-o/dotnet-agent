@@ -1,0 +1,4 @@
+interface:
+  display_name: "detect-static-dependencies"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $detect-static-dependencies through plugin dotnet-test and preserve the pinned upstream source."

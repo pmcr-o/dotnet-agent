@@ -1,0 +1,20 @@
+{
+  "id": "create-skill",
+  "plugin": "dotnet-repo-authoring",
+  "independentSurface": true,
+  "independentChecker": false,
+  "sourceRef": ".agents/skills/create-skill",
+  "input": [
+    "seed",
+    "workspace",
+    "relativeScript",
+    "apply"
+  ],
+  "output": [
+    "source",
+    "command",
+    "exitCode",
+    "evidence",
+    "checker_handoff"
+  ]
+}

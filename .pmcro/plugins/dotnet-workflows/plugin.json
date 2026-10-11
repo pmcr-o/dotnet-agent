@@ -1,0 +1,8 @@
+{
+  "name": "dotnet-workflows",
+  "version": "0.1.0",
+  "description": "Wrappers for pinned dotnet/skills agentic workflows.",
+  "skills": [
+    "./skills/"
+  ]
+}

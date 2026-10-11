@@ -1,0 +1,4 @@
+interface:
+  display_name: "binlog-failure-analysis"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $binlog-failure-analysis through plugin dotnet-msbuild and preserve the pinned upstream source."

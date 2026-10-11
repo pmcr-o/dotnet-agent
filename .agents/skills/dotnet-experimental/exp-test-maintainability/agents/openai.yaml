@@ -1,0 +1,4 @@
+interface:
+  display_name: "exp-test-maintainability"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $exp-test-maintainability through plugin dotnet-experimental and preserve the pinned upstream source."

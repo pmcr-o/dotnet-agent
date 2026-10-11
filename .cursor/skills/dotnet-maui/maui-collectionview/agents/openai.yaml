@@ -1,0 +1,4 @@
+interface:
+  display_name: "maui-collectionview"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $maui-collectionview through plugin dotnet-maui and preserve the pinned upstream source."

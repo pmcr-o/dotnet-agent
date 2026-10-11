@@ -1,0 +1,4 @@
+interface:
+  display_name: "support-prerendering"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $support-prerendering through plugin dotnet-blazor and preserve the pinned upstream source."

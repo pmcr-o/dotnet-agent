@@ -1,0 +1,20 @@
+{
+  "id": "authoring-github-workflows",
+  "plugin": "dotnet-repo-authoring",
+  "independentSurface": true,
+  "independentChecker": false,
+  "sourceRef": ".agents/skills/authoring-github-workflows",
+  "input": [
+    "seed",
+    "workspace",
+    "relativeScript",
+    "apply"
+  ],
+  "output": [
+    "source",
+    "command",
+    "exitCode",
+    "evidence",
+    "checker_handoff"
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "check-bin-obj-clash"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $check-bin-obj-clash through plugin dotnet-msbuild and preserve the pinned upstream source."

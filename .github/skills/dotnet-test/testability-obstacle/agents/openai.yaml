@@ -1,0 +1,4 @@
+interface:
+  display_name: "testability-obstacle"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $testability-obstacle through plugin dotnet-test and preserve the pinned upstream source."

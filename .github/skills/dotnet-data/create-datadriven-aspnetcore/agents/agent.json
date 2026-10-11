@@ -1,0 +1,20 @@
+{
+  "id": "create-datadriven-aspnetcore",
+  "plugin": "dotnet-data",
+  "independentSurface": true,
+  "independentChecker": false,
+  "sourceRef": "plugins/dotnet-data/skills/create-datadriven-aspnetcore",
+  "input": [
+    "seed",
+    "workspace",
+    "relativeScript",
+    "apply"
+  ],
+  "output": [
+    "source",
+    "command",
+    "exitCode",
+    "evidence",
+    "checker_handoff"
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "coverage-analysis"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $coverage-analysis through plugin dotnet-test and preserve the pinned upstream source."

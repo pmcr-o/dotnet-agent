@@ -1,0 +1,4 @@
+interface:
+  display_name: "incremental-build"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $incremental-build through plugin dotnet-msbuild and preserve the pinned upstream source."

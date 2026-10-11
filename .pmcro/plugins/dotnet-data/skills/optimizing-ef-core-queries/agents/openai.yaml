@@ -1,0 +1,4 @@
+interface:
+  display_name: "optimizing-ef-core-queries"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $optimizing-ef-core-queries through plugin dotnet-data and preserve the pinned upstream source."

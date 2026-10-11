@@ -1,0 +1,4 @@
+interface:
+  display_name: "use-igniteui-blazor"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $use-igniteui-blazor through plugin dotnet-blazor and preserve the pinned upstream source."

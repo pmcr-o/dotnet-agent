@@ -1,0 +1,4 @@
+interface:
+  display_name: "fetch-and-send-data"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $fetch-and-send-data through plugin dotnet-blazor and preserve the pinned upstream source."

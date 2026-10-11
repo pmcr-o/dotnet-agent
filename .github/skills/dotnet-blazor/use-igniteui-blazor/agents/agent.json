@@ -1,0 +1,20 @@
+{
+  "id": "use-igniteui-blazor",
+  "plugin": "dotnet-blazor",
+  "independentSurface": true,
+  "independentChecker": false,
+  "sourceRef": "plugins/dotnet-blazor/skills/use-igniteui-blazor",
+  "input": [
+    "seed",
+    "workspace",
+    "relativeScript",
+    "apply"
+  ],
+  "output": [
+    "source",
+    "command",
+    "exitCode",
+    "evidence",
+    "checker_handoff"
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "writing-mstest-tests"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $writing-mstest-tests through plugin dotnet-test and preserve the pinned upstream source."

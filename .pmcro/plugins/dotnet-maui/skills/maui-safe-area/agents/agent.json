@@ -1,0 +1,20 @@
+{
+  "id": "maui-safe-area",
+  "plugin": "dotnet-maui",
+  "independentSurface": true,
+  "independentChecker": false,
+  "sourceRef": "plugins/dotnet-maui/skills/maui-safe-area",
+  "input": [
+    "seed",
+    "workspace",
+    "relativeScript",
+    "apply"
+  ],
+  "output": [
+    "source",
+    "command",
+    "exitCode",
+    "evidence",
+    "checker_handoff"
+  ]
+}

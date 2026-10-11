@@ -1,0 +1,20 @@
+{
+  "id": "fetch-and-send-data",
+  "plugin": "dotnet-blazor",
+  "independentSurface": true,
+  "independentChecker": false,
+  "sourceRef": "plugins/dotnet-blazor/skills/fetch-and-send-data",
+  "input": [
+    "seed",
+    "workspace",
+    "relativeScript",
+    "apply"
+  ],
+  "output": [
+    "source",
+    "command",
+    "exitCode",
+    "evidence",
+    "checker_handoff"
+  ]
+}

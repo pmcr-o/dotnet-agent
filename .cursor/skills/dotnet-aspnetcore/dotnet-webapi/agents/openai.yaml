@@ -1,0 +1,4 @@
+interface:
+  display_name: "dotnet-webapi"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $dotnet-webapi through plugin dotnet-aspnetcore and preserve the pinned upstream source."

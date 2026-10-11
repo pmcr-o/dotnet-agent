@@ -1,0 +1,4 @@
+interface:
+  display_name: "dump-collect"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $dump-collect through plugin dotnet-diag and preserve the pinned upstream source."

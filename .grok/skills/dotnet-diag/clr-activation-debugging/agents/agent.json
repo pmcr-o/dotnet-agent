@@ -1,0 +1,20 @@
+{
+  "id": "clr-activation-debugging",
+  "plugin": "dotnet-diag",
+  "independentSurface": true,
+  "independentChecker": false,
+  "sourceRef": "plugins/dotnet-diag/skills/clr-activation-debugging",
+  "input": [
+    "seed",
+    "workspace",
+    "relativeScript",
+    "apply"
+  ],
+  "output": [
+    "source",
+    "command",
+    "exitCode",
+    "evidence",
+    "checker_handoff"
+  ]
+}

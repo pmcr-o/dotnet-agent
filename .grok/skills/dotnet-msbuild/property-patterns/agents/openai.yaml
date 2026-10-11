@@ -1,0 +1,4 @@
+interface:
+  display_name: "property-patterns"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $property-patterns through plugin dotnet-msbuild and preserve the pinned upstream source."

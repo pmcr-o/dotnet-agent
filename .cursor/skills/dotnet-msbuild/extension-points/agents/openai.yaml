@@ -1,0 +1,4 @@
+interface:
+  display_name: "extension-points"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $extension-points through plugin dotnet-msbuild and preserve the pinned upstream source."

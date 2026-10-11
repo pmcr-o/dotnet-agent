@@ -1,0 +1,4 @@
+interface:
+  display_name: "create-datadriven-aspnetcore"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $create-datadriven-aspnetcore through plugin dotnet-data and preserve the pinned upstream source."

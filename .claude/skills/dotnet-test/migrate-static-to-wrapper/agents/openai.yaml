@@ -1,0 +1,4 @@
+interface:
+  display_name: "migrate-static-to-wrapper"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $migrate-static-to-wrapper through plugin dotnet-test and preserve the pinned upstream source."

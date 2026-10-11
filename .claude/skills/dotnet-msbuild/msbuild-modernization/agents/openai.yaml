@@ -1,0 +1,4 @@
+interface:
+  display_name: "msbuild-modernization"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $msbuild-modernization through plugin dotnet-msbuild and preserve the pinned upstream source."

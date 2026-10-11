@@ -1,0 +1,4 @@
+interface:
+  display_name: "configure-auth"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $configure-auth through plugin dotnet-blazor and preserve the pinned upstream source."

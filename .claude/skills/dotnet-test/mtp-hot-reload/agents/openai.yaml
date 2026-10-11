@@ -1,0 +1,4 @@
+interface:
+  display_name: "mtp-hot-reload"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $mtp-hot-reload through plugin dotnet-test and preserve the pinned upstream source."

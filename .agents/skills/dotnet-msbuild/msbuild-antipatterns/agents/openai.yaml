@@ -1,0 +1,4 @@
+interface:
+  display_name: "msbuild-antipatterns"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $msbuild-antipatterns through plugin dotnet-msbuild and preserve the pinned upstream source."

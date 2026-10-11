@@ -1,0 +1,4 @@
+interface:
+  display_name: "unskip-closed-tests"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $unskip-closed-tests through plugin dotnet-workflows and preserve the pinned upstream source."

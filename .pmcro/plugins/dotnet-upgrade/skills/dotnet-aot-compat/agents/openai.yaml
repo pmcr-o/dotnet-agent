@@ -1,0 +1,4 @@
+interface:
+  display_name: "dotnet-aot-compat"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $dotnet-aot-compat through plugin dotnet-upgrade and preserve the pinned upstream source."

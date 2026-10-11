@@ -1,0 +1,20 @@
+{
+  "id": "build-perf-baseline",
+  "plugin": "dotnet-msbuild",
+  "independentSurface": true,
+  "independentChecker": false,
+  "sourceRef": "plugins/dotnet-msbuild/skills/build-perf-baseline",
+  "input": [
+    "seed",
+    "workspace",
+    "relativeScript",
+    "apply"
+  ],
+  "output": [
+    "source",
+    "command",
+    "exitCode",
+    "evidence",
+    "checker_handoff"
+  ]
+}

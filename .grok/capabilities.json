@@ -1,0 +1,576 @@
+{
+  "schema": "pmcro.capabilities/v1",
+  "agent": "dotnet-agent",
+  "executionRule": "registered AND runtime-present AND authorized",
+  "manualParity": {
+    "required": true,
+    "rule": "agent and manual terminal use the same scripts with the same arguments, exit codes, and evidence"
+  },
+  "capabilities": [
+    {
+      "plugin": "dotnet",
+      "skill": "csharp-expert",
+      "route": "@dotnet-agent /dotnet:csharp-expert"
+    },
+    {
+      "plugin": "dotnet",
+      "skill": "csharp-refactoring",
+      "route": "@dotnet-agent /dotnet:csharp-refactoring"
+    },
+    {
+      "plugin": "dotnet",
+      "skill": "msbuild",
+      "route": "@dotnet-agent /dotnet:msbuild"
+    },
+    {
+      "plugin": "dotnet",
+      "skill": "setup-local-sdk",
+      "route": "@dotnet-agent /dotnet:setup-local-sdk"
+    },
+    {
+      "plugin": "dotnet-advanced",
+      "skill": "csharp-scripts",
+      "route": "@dotnet-agent /dotnet-advanced:csharp-scripts"
+    },
+    {
+      "plugin": "dotnet-advanced",
+      "skill": "dotnet-pinvoke",
+      "route": "@dotnet-agent /dotnet-advanced:dotnet-pinvoke"
+    },
+    {
+      "plugin": "dotnet-advanced",
+      "skill": "nuget-trusted-publishing",
+      "route": "@dotnet-agent /dotnet-advanced:nuget-trusted-publishing"
+    },
+    {
+      "plugin": "dotnet-advanced",
+      "skill": "vectorization",
+      "route": "@dotnet-agent /dotnet-advanced:vectorization"
+    },
+    {
+      "plugin": "dotnet-ai",
+      "skill": "technology-selection",
+      "route": "@dotnet-agent /dotnet-ai:technology-selection"
+    },
+    {
+      "plugin": "dotnet-aspnetcore",
+      "skill": "convert-blazor-server-to-webapp",
+      "route": "@dotnet-agent /dotnet-aspnetcore:convert-blazor-server-to-webapp"
+    },
+    {
+      "plugin": "dotnet-aspnetcore",
+      "skill": "dotnet-webapi",
+      "route": "@dotnet-agent /dotnet-aspnetcore:dotnet-webapi"
+    },
+    {
+      "plugin": "dotnet-blazor",
+      "skill": "author-component",
+      "route": "@dotnet-agent /dotnet-blazor:author-component"
+    },
+    {
+      "plugin": "dotnet-blazor",
+      "skill": "collect-user-input",
+      "route": "@dotnet-agent /dotnet-blazor:collect-user-input"
+    },
+    {
+      "plugin": "dotnet-blazor",
+      "skill": "configure-auth",
+      "route": "@dotnet-agent /dotnet-blazor:configure-auth"
+    },
+    {
+      "plugin": "dotnet-blazor",
+      "skill": "coordinate-components",
+      "route": "@dotnet-agent /dotnet-blazor:coordinate-components"
+    },
+    {
+      "plugin": "dotnet-blazor",
+      "skill": "create-blazor-project",
+      "route": "@dotnet-agent /dotnet-blazor:create-blazor-project"
+    },
+    {
+      "plugin": "dotnet-blazor",
+      "skill": "fetch-and-send-data",
+      "route": "@dotnet-agent /dotnet-blazor:fetch-and-send-data"
+    },
+    {
+      "plugin": "dotnet-blazor",
+      "skill": "plan-ui-change",
+      "route": "@dotnet-agent /dotnet-blazor:plan-ui-change"
+    },
+    {
+      "plugin": "dotnet-blazor",
+      "skill": "support-prerendering",
+      "route": "@dotnet-agent /dotnet-blazor:support-prerendering"
+    },
+    {
+      "plugin": "dotnet-blazor",
+      "skill": "use-igniteui-blazor",
+      "route": "@dotnet-agent /dotnet-blazor:use-igniteui-blazor"
+    },
+    {
+      "plugin": "dotnet-blazor",
+      "skill": "use-js-interop",
+      "route": "@dotnet-agent /dotnet-blazor:use-js-interop"
+    },
+    {
+      "plugin": "dotnet-data",
+      "skill": "create-datadriven-aspnetcore",
+      "route": "@dotnet-agent /dotnet-data:create-datadriven-aspnetcore"
+    },
+    {
+      "plugin": "dotnet-data",
+      "skill": "optimizing-ef-core-queries",
+      "route": "@dotnet-agent /dotnet-data:optimizing-ef-core-queries"
+    },
+    {
+      "plugin": "dotnet-diag",
+      "skill": "analyzing-dotnet-performance",
+      "route": "@dotnet-agent /dotnet-diag:analyzing-dotnet-performance"
+    },
+    {
+      "plugin": "dotnet-diag",
+      "skill": "android-tombstone-symbolication",
+      "route": "@dotnet-agent /dotnet-diag:android-tombstone-symbolication"
+    },
+    {
+      "plugin": "dotnet-diag",
+      "skill": "apple-crash-symbolication",
+      "route": "@dotnet-agent /dotnet-diag:apple-crash-symbolication"
+    },
+    {
+      "plugin": "dotnet-diag",
+      "skill": "clr-activation-debugging",
+      "route": "@dotnet-agent /dotnet-diag:clr-activation-debugging"
+    },
+    {
+      "plugin": "dotnet-diag",
+      "skill": "dotnet-trace-collect",
+      "route": "@dotnet-agent /dotnet-diag:dotnet-trace-collect"
+    },
+    {
+      "plugin": "dotnet-diag",
+      "skill": "dump-collect",
+      "route": "@dotnet-agent /dotnet-diag:dump-collect"
+    },
+    {
+      "plugin": "dotnet-diag",
+      "skill": "microbenchmarking",
+      "route": "@dotnet-agent /dotnet-diag:microbenchmarking"
+    },
+    {
+      "plugin": "dotnet-experimental",
+      "skill": "exp-mock-usage-analysis",
+      "route": "@dotnet-agent /dotnet-experimental:exp-mock-usage-analysis"
+    },
+    {
+      "plugin": "dotnet-experimental",
+      "skill": "exp-test-maintainability",
+      "route": "@dotnet-agent /dotnet-experimental:exp-test-maintainability"
+    },
+    {
+      "plugin": "dotnet-maui",
+      "skill": "dotnet-maui-doctor",
+      "route": "@dotnet-agent /dotnet-maui:dotnet-maui-doctor"
+    },
+    {
+      "plugin": "dotnet-maui",
+      "skill": "maui-app-lifecycle",
+      "route": "@dotnet-agent /dotnet-maui:maui-app-lifecycle"
+    },
+    {
+      "plugin": "dotnet-maui",
+      "skill": "maui-collectionview",
+      "route": "@dotnet-agent /dotnet-maui:maui-collectionview"
+    },
+    {
+      "plugin": "dotnet-maui",
+      "skill": "maui-data-binding",
+      "route": "@dotnet-agent /dotnet-maui:maui-data-binding"
+    },
+    {
+      "plugin": "dotnet-maui",
+      "skill": "maui-dependency-injection",
+      "route": "@dotnet-agent /dotnet-maui:maui-dependency-injection"
+    },
+    {
+      "plugin": "dotnet-maui",
+      "skill": "maui-safe-area",
+      "route": "@dotnet-agent /dotnet-maui:maui-safe-area"
+    },
+    {
+      "plugin": "dotnet-maui",
+      "skill": "maui-shell-navigation",
+      "route": "@dotnet-agent /dotnet-maui:maui-shell-navigation"
+    },
+    {
+      "plugin": "dotnet-maui",
+      "skill": "maui-theming",
+      "route": "@dotnet-agent /dotnet-maui:maui-theming"
+    },
+    {
+      "plugin": "dotnet-msbuild",
+      "skill": "binlog-failure-analysis",
+      "route": "@dotnet-agent /dotnet-msbuild:binlog-failure-analysis"
+    },
+    {
+      "plugin": "dotnet-msbuild",
+      "skill": "binlog-generation",
+      "route": "@dotnet-agent /dotnet-msbuild:binlog-generation"
+    },
+    {
+      "plugin": "dotnet-msbuild",
+      "skill": "build-parallelism",
+      "route": "@dotnet-agent /dotnet-msbuild:build-parallelism"
+    },
+    {
+      "plugin": "dotnet-msbuild",
+      "skill": "build-perf-baseline",
+      "route": "@dotnet-agent /dotnet-msbuild:build-perf-baseline"
+    },
+    {
+      "plugin": "dotnet-msbuild",
+      "skill": "build-perf-diagnostics",
+      "route": "@dotnet-agent /dotnet-msbuild:build-perf-diagnostics"
+    },
+    {
+      "plugin": "dotnet-msbuild",
+      "skill": "check-bin-obj-clash",
+      "route": "@dotnet-agent /dotnet-msbuild:check-bin-obj-clash"
+    },
+    {
+      "plugin": "dotnet-msbuild",
+      "skill": "copy-to-output-directory",
+      "route": "@dotnet-agent /dotnet-msbuild:copy-to-output-directory"
+    },
+    {
+      "plugin": "dotnet-msbuild",
+      "skill": "directory-build-organization",
+      "route": "@dotnet-agent /dotnet-msbuild:directory-build-organization"
+    },
+    {
+      "plugin": "dotnet-msbuild",
+      "skill": "eval-performance",
+      "route": "@dotnet-agent /dotnet-msbuild:eval-performance"
+    },
+    {
+      "plugin": "dotnet-msbuild",
+      "skill": "extension-points",
+      "route": "@dotnet-agent /dotnet-msbuild:extension-points"
+    },
+    {
+      "plugin": "dotnet-msbuild",
+      "skill": "including-generated-files",
+      "route": "@dotnet-agent /dotnet-msbuild:including-generated-files"
+    },
+    {
+      "plugin": "dotnet-msbuild",
+      "skill": "incremental-build",
+      "route": "@dotnet-agent /dotnet-msbuild:incremental-build"
+    },
+    {
+      "plugin": "dotnet-msbuild",
+      "skill": "item-management",
+      "route": "@dotnet-agent /dotnet-msbuild:item-management"
+    },
+    {
+      "plugin": "dotnet-msbuild",
+      "skill": "msbuild-antipatterns",
+      "route": "@dotnet-agent /dotnet-msbuild:msbuild-antipatterns"
+    },
+    {
+      "plugin": "dotnet-msbuild",
+      "skill": "msbuild-modernization",
+      "route": "@dotnet-agent /dotnet-msbuild:msbuild-modernization"
+    },
+    {
+      "plugin": "dotnet-msbuild",
+      "skill": "property-patterns",
+      "route": "@dotnet-agent /dotnet-msbuild:property-patterns"
+    },
+    {
+      "plugin": "dotnet-msbuild",
+      "skill": "resolve-project-references",
+      "route": "@dotnet-agent /dotnet-msbuild:resolve-project-references"
+    },
+    {
+      "plugin": "dotnet-msbuild",
+      "skill": "target-authoring",
+      "route": "@dotnet-agent /dotnet-msbuild:target-authoring"
+    },
+    {
+      "plugin": "dotnet-nuget",
+      "skill": "convert-to-cpm",
+      "route": "@dotnet-agent /dotnet-nuget:convert-to-cpm"
+    },
+    {
+      "plugin": "dotnet-repo-authoring",
+      "skill": "authoring-github-workflows",
+      "route": "@dotnet-agent /dotnet-repo-authoring:authoring-github-workflows"
+    },
+    {
+      "plugin": "dotnet-repo-authoring",
+      "skill": "create-custom-agent",
+      "route": "@dotnet-agent /dotnet-repo-authoring:create-custom-agent"
+    },
+    {
+      "plugin": "dotnet-repo-authoring",
+      "skill": "create-skill",
+      "route": "@dotnet-agent /dotnet-repo-authoring:create-skill"
+    },
+    {
+      "plugin": "dotnet-repo-authoring",
+      "skill": "create-skill-test",
+      "route": "@dotnet-agent /dotnet-repo-authoring:create-skill-test"
+    },
+    {
+      "plugin": "dotnet-repo-authoring",
+      "skill": "improve-skill-quality",
+      "route": "@dotnet-agent /dotnet-repo-authoring:improve-skill-quality"
+    },
+    {
+      "plugin": "dotnet-template-engine",
+      "skill": "template-authoring",
+      "route": "@dotnet-agent /dotnet-template-engine:template-authoring"
+    },
+    {
+      "plugin": "dotnet-template-engine",
+      "skill": "template-comparison",
+      "route": "@dotnet-agent /dotnet-template-engine:template-comparison"
+    },
+    {
+      "plugin": "dotnet-template-engine",
+      "skill": "template-discovery",
+      "route": "@dotnet-agent /dotnet-template-engine:template-discovery"
+    },
+    {
+      "plugin": "dotnet-template-engine",
+      "skill": "template-instantiation",
+      "route": "@dotnet-agent /dotnet-template-engine:template-instantiation"
+    },
+    {
+      "plugin": "dotnet-template-engine",
+      "skill": "template-smart-defaults",
+      "route": "@dotnet-agent /dotnet-template-engine:template-smart-defaults"
+    },
+    {
+      "plugin": "dotnet-template-engine",
+      "skill": "template-validation",
+      "route": "@dotnet-agent /dotnet-template-engine:template-validation"
+    },
+    {
+      "plugin": "dotnet-test",
+      "skill": "assertion-quality",
+      "route": "@dotnet-agent /dotnet-test:assertion-quality"
+    },
+    {
+      "plugin": "dotnet-test",
+      "skill": "code-testing",
+      "route": "@dotnet-agent /dotnet-test:code-testing"
+    },
+    {
+      "plugin": "dotnet-test",
+      "skill": "code-testing-agent",
+      "route": "@dotnet-agent /dotnet-test:code-testing-agent"
+    },
+    {
+      "plugin": "dotnet-test",
+      "skill": "code-testing-extensions",
+      "route": "@dotnet-agent /dotnet-test:code-testing-extensions"
+    },
+    {
+      "plugin": "dotnet-test",
+      "skill": "coverage-analysis",
+      "route": "@dotnet-agent /dotnet-test:coverage-analysis"
+    },
+    {
+      "plugin": "dotnet-test",
+      "skill": "crap-score",
+      "route": "@dotnet-agent /dotnet-test:crap-score"
+    },
+    {
+      "plugin": "dotnet-test",
+      "skill": "detect-static-dependencies",
+      "route": "@dotnet-agent /dotnet-test:detect-static-dependencies"
+    },
+    {
+      "plugin": "dotnet-test",
+      "skill": "filter-syntax",
+      "route": "@dotnet-agent /dotnet-test:filter-syntax"
+    },
+    {
+      "plugin": "dotnet-test",
+      "skill": "find-untested-sources",
+      "route": "@dotnet-agent /dotnet-test:find-untested-sources"
+    },
+    {
+      "plugin": "dotnet-test",
+      "skill": "generate-testability-wrappers",
+      "route": "@dotnet-agent /dotnet-test:generate-testability-wrappers"
+    },
+    {
+      "plugin": "dotnet-test",
+      "skill": "grade-tests",
+      "route": "@dotnet-agent /dotnet-test:grade-tests"
+    },
+    {
+      "plugin": "dotnet-test",
+      "skill": "migrate-static-to-wrapper",
+      "route": "@dotnet-agent /dotnet-test:migrate-static-to-wrapper"
+    },
+    {
+      "plugin": "dotnet-test",
+      "skill": "mtp-hot-reload",
+      "route": "@dotnet-agent /dotnet-test:mtp-hot-reload"
+    },
+    {
+      "plugin": "dotnet-test",
+      "skill": "platform-detection",
+      "route": "@dotnet-agent /dotnet-test:platform-detection"
+    },
+    {
+      "plugin": "dotnet-test",
+      "skill": "run-tests",
+      "route": "@dotnet-agent /dotnet-test:run-tests"
+    },
+    {
+      "plugin": "dotnet-test",
+      "skill": "scaffold-dotnet-test-project",
+      "route": "@dotnet-agent /dotnet-test:scaffold-dotnet-test-project"
+    },
+    {
+      "plugin": "dotnet-test",
+      "skill": "test-analysis-extensions",
+      "route": "@dotnet-agent /dotnet-test:test-analysis-extensions"
+    },
+    {
+      "plugin": "dotnet-test",
+      "skill": "test-anti-patterns",
+      "route": "@dotnet-agent /dotnet-test:test-anti-patterns"
+    },
+    {
+      "plugin": "dotnet-test",
+      "skill": "test-gap-analysis",
+      "route": "@dotnet-agent /dotnet-test:test-gap-analysis"
+    },
+    {
+      "plugin": "dotnet-test",
+      "skill": "test-smell-detection",
+      "route": "@dotnet-agent /dotnet-test:test-smell-detection"
+    },
+    {
+      "plugin": "dotnet-test",
+      "skill": "test-tagging",
+      "route": "@dotnet-agent /dotnet-test:test-tagging"
+    },
+    {
+      "plugin": "dotnet-test",
+      "skill": "testability-obstacle",
+      "route": "@dotnet-agent /dotnet-test:testability-obstacle"
+    },
+    {
+      "plugin": "dotnet-test",
+      "skill": "writing-mstest-tests",
+      "route": "@dotnet-agent /dotnet-test:writing-mstest-tests"
+    },
+    {
+      "plugin": "dotnet-test-migration",
+      "skill": "migrate-mstest-v1v2-to-v3",
+      "route": "@dotnet-agent /dotnet-test-migration:migrate-mstest-v1v2-to-v3"
+    },
+    {
+      "plugin": "dotnet-test-migration",
+      "skill": "migrate-mstest-v3-to-v4",
+      "route": "@dotnet-agent /dotnet-test-migration:migrate-mstest-v3-to-v4"
+    },
+    {
+      "plugin": "dotnet-test-migration",
+      "skill": "migrate-nunit-to-mstest",
+      "route": "@dotnet-agent /dotnet-test-migration:migrate-nunit-to-mstest"
+    },
+    {
+      "plugin": "dotnet-test-migration",
+      "skill": "migrate-vstest-to-mtp",
+      "route": "@dotnet-agent /dotnet-test-migration:migrate-vstest-to-mtp"
+    },
+    {
+      "plugin": "dotnet-test-migration",
+      "skill": "migrate-xunit-to-mstest",
+      "route": "@dotnet-agent /dotnet-test-migration:migrate-xunit-to-mstest"
+    },
+    {
+      "plugin": "dotnet-test-migration",
+      "skill": "migrate-xunit-to-xunit-v3",
+      "route": "@dotnet-agent /dotnet-test-migration:migrate-xunit-to-xunit-v3"
+    },
+    {
+      "plugin": "dotnet-upgrade",
+      "skill": "dotnet-aot-compat",
+      "route": "@dotnet-agent /dotnet-upgrade:dotnet-aot-compat"
+    },
+    {
+      "plugin": "dotnet-upgrade",
+      "skill": "migrate-dotnet10-to-dotnet11",
+      "route": "@dotnet-agent /dotnet-upgrade:migrate-dotnet10-to-dotnet11"
+    },
+    {
+      "plugin": "dotnet-upgrade",
+      "skill": "migrate-dotnet8-to-dotnet9",
+      "route": "@dotnet-agent /dotnet-upgrade:migrate-dotnet8-to-dotnet9"
+    },
+    {
+      "plugin": "dotnet-upgrade",
+      "skill": "migrate-dotnet9-to-dotnet10",
+      "route": "@dotnet-agent /dotnet-upgrade:migrate-dotnet9-to-dotnet10"
+    },
+    {
+      "plugin": "dotnet-upgrade",
+      "skill": "migrate-nullable-references",
+      "route": "@dotnet-agent /dotnet-upgrade:migrate-nullable-references"
+    },
+    {
+      "plugin": "dotnet-upgrade",
+      "skill": "thread-abort-migration",
+      "route": "@dotnet-agent /dotnet-upgrade:thread-abort-migration"
+    },
+    {
+      "plugin": "dotnet-winforms",
+      "skill": "winforms-expert",
+      "route": "@dotnet-agent /dotnet-winforms:winforms-expert"
+    },
+    {
+      "plugin": "dotnet-workflows",
+      "skill": "build-failure-analysis",
+      "route": "@dotnet-agent /dotnet-workflows:build-failure-analysis"
+    },
+    {
+      "plugin": "dotnet-workflows",
+      "skill": "msbuild-quality-review",
+      "route": "@dotnet-agent /dotnet-workflows:msbuild-quality-review"
+    },
+    {
+      "plugin": "dotnet-workflows",
+      "skill": "test-failure-analysis",
+      "route": "@dotnet-agent /dotnet-workflows:test-failure-analysis"
+    },
+    {
+      "plugin": "dotnet-workflows",
+      "skill": "unskip-closed-tests",
+      "route": "@dotnet-agent /dotnet-workflows:unskip-closed-tests"
+    },
+    {
+      "plugin": "dotnet11",
+      "skill": "system-text-json-net11",
+      "route": "@dotnet-agent /dotnet11:system-text-json-net11"
+    },
+    {
+      "plugin": "pmcro-dotnet",
+      "skill": "dotnet-marketplace",
+      "route": "@dotnet-agent /pmcro-dotnet:dotnet-marketplace"
+    },
+    {
+      "plugin": "pmcro-dotnet",
+      "skill": "dotnet-toolchain",
+      "route": "@dotnet-agent /pmcro-dotnet:dotnet-toolchain"
+    }
+  ]
+}

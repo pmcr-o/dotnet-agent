@@ -1,0 +1,20 @@
+{
+  "id": "convert-to-cpm",
+  "plugin": "dotnet-nuget",
+  "independentSurface": true,
+  "independentChecker": false,
+  "sourceRef": "plugins/dotnet-nuget/skills/convert-to-cpm",
+  "input": [
+    "seed",
+    "workspace",
+    "relativeScript",
+    "apply"
+  ],
+  "output": [
+    "source",
+    "command",
+    "exitCode",
+    "evidence",
+    "checker_handoff"
+  ]
+}

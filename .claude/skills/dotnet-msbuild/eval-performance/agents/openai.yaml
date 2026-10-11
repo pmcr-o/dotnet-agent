@@ -1,0 +1,4 @@
+interface:
+  display_name: "eval-performance"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $eval-performance through plugin dotnet-msbuild and preserve the pinned upstream source."

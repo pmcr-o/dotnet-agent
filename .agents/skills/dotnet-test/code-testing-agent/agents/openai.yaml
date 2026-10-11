@@ -1,0 +1,4 @@
+interface:
+  display_name: "code-testing-agent"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $code-testing-agent through plugin dotnet-test and preserve the pinned upstream source."

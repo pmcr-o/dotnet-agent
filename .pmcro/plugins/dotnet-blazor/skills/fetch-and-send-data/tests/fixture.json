@@ -1,0 +1,7 @@
+{
+  "skill": "fetch-and-send-data",
+  "plugin": "dotnet-blazor",
+  "source": "plugins/dotnet-blazor/skills/fetch-and-send-data",
+  "revision": "1d40f95ed0f2cdedfa4c9b2614b7c2035a4323cb",
+  "kind": "upstream-plugin-skill"
+}

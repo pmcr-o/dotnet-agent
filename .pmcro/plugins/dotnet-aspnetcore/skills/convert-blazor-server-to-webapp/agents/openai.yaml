@@ -1,0 +1,4 @@
+interface:
+  display_name: "convert-blazor-server-to-webapp"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $convert-blazor-server-to-webapp through plugin dotnet-aspnetcore and preserve the pinned upstream source."

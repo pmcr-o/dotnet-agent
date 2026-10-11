@@ -1,0 +1,7 @@
+{
+  "repository": "https://github.com/dotnet/skills.git",
+  "revision": "1d40f95ed0f2cdedfa4c9b2614b7c2035a4323cb",
+  "source": "agentic-workflows/build-failure-analysis",
+  "kind": "upstream-agentic-workflow",
+  "immutable": true
+}

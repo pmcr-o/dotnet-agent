@@ -1,0 +1,20 @@
+{
+  "id": "csharp-refactoring",
+  "plugin": "dotnet",
+  "independentSurface": true,
+  "independentChecker": false,
+  "sourceRef": "plugins/dotnet/skills/csharp-refactoring",
+  "input": [
+    "seed",
+    "workspace",
+    "relativeScript",
+    "apply"
+  ],
+  "output": [
+    "source",
+    "command",
+    "exitCode",
+    "evidence",
+    "checker_handoff"
+  ]
+}

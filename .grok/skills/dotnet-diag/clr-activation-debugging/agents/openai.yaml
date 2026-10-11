@@ -1,0 +1,4 @@
+interface:
+  display_name: "clr-activation-debugging"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $clr-activation-debugging through plugin dotnet-diag and preserve the pinned upstream source."

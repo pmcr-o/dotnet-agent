@@ -1,0 +1,4 @@
+interface:
+  display_name: "resolve-project-references"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $resolve-project-references through plugin dotnet-msbuild and preserve the pinned upstream source."

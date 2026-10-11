@@ -1,0 +1,4 @@
+interface:
+  display_name: "migrate-dotnet10-to-dotnet11"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $migrate-dotnet10-to-dotnet11 through plugin dotnet-upgrade and preserve the pinned upstream source."

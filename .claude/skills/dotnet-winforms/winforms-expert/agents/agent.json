@@ -1,0 +1,20 @@
+{
+  "id": "winforms-expert",
+  "plugin": "dotnet-winforms",
+  "independentSurface": true,
+  "independentChecker": false,
+  "sourceRef": "plugins/dotnet-winforms/skills/winforms-expert",
+  "input": [
+    "seed",
+    "workspace",
+    "relativeScript",
+    "apply"
+  ],
+  "output": [
+    "source",
+    "command",
+    "exitCode",
+    "evidence",
+    "checker_handoff"
+  ]
+}

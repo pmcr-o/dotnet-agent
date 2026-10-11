@@ -1,0 +1,4 @@
+interface:
+  display_name: "generate-testability-wrappers"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $generate-testability-wrappers through plugin dotnet-test and preserve the pinned upstream source."

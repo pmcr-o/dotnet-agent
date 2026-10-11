@@ -1,0 +1,20 @@
+{
+  "id": "exp-test-maintainability",
+  "plugin": "dotnet-experimental",
+  "independentSurface": true,
+  "independentChecker": false,
+  "sourceRef": "plugins/dotnet-experimental/skills/exp-test-maintainability",
+  "input": [
+    "seed",
+    "workspace",
+    "relativeScript",
+    "apply"
+  ],
+  "output": [
+    "source",
+    "command",
+    "exitCode",
+    "evidence",
+    "checker_handoff"
+  ]
+}

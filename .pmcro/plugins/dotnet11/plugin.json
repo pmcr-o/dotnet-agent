@@ -1,0 +1,9 @@
+{
+  "name": "dotnet11",
+  "version": "0.1.2",
+  "description": "Skills for .NET 11 APIs and language features.",
+  "skills": [
+    "./skills/"
+  ],
+  "upstreamRef": ".pmcro/upstream/dotnet-skills/plugins/dotnet11"
+}

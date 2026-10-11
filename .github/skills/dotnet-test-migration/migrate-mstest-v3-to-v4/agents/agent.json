@@ -1,0 +1,20 @@
+{
+  "id": "migrate-mstest-v3-to-v4",
+  "plugin": "dotnet-test-migration",
+  "independentSurface": true,
+  "independentChecker": false,
+  "sourceRef": "plugins/dotnet-test-migration/skills/migrate-mstest-v3-to-v4",
+  "input": [
+    "seed",
+    "workspace",
+    "relativeScript",
+    "apply"
+  ],
+  "output": [
+    "source",
+    "command",
+    "exitCode",
+    "evidence",
+    "checker_handoff"
+  ]
+}

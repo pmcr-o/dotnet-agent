@@ -1,0 +1,20 @@
+{
+  "id": "copy-to-output-directory",
+  "plugin": "dotnet-msbuild",
+  "independentSurface": true,
+  "independentChecker": false,
+  "sourceRef": "plugins/dotnet-msbuild/skills/copy-to-output-directory",
+  "input": [
+    "seed",
+    "workspace",
+    "relativeScript",
+    "apply"
+  ],
+  "output": [
+    "source",
+    "command",
+    "exitCode",
+    "evidence",
+    "checker_handoff"
+  ]
+}

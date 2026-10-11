@@ -1,0 +1,20 @@
+{
+  "id": "analyzing-dotnet-performance",
+  "plugin": "dotnet-diag",
+  "independentSurface": true,
+  "independentChecker": false,
+  "sourceRef": "plugins/dotnet-diag/skills/analyzing-dotnet-performance",
+  "input": [
+    "seed",
+    "workspace",
+    "relativeScript",
+    "apply"
+  ],
+  "output": [
+    "source",
+    "command",
+    "exitCode",
+    "evidence",
+    "checker_handoff"
+  ]
+}

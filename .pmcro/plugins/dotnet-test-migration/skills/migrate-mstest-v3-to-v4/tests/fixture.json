@@ -1,0 +1,7 @@
+{
+  "skill": "migrate-mstest-v3-to-v4",
+  "plugin": "dotnet-test-migration",
+  "source": "plugins/dotnet-test-migration/skills/migrate-mstest-v3-to-v4",
+  "revision": "1d40f95ed0f2cdedfa4c9b2614b7c2035a4323cb",
+  "kind": "upstream-plugin-skill"
+}

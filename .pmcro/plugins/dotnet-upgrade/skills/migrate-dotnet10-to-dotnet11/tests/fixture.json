@@ -1,0 +1,7 @@
+{
+  "skill": "migrate-dotnet10-to-dotnet11",
+  "plugin": "dotnet-upgrade",
+  "source": "plugins/dotnet-upgrade/skills/migrate-dotnet10-to-dotnet11",
+  "revision": "1d40f95ed0f2cdedfa4c9b2614b7c2035a4323cb",
+  "kind": "upstream-plugin-skill"
+}

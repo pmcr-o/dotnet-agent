@@ -1,0 +1,4 @@
+interface:
+  display_name: "vectorization"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $vectorization through plugin dotnet-advanced and preserve the pinned upstream source."

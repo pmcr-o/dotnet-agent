@@ -1,0 +1,4 @@
+interface:
+  display_name: "migrate-vstest-to-mtp"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $migrate-vstest-to-mtp through plugin dotnet-test-migration and preserve the pinned upstream source."

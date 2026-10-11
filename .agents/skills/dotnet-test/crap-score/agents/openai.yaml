@@ -1,0 +1,4 @@
+interface:
+  display_name: "crap-score"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $crap-score through plugin dotnet-test and preserve the pinned upstream source."

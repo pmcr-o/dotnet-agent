@@ -1,0 +1,4 @@
+interface:
+  display_name: "migrate-dotnet8-to-dotnet9"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $migrate-dotnet8-to-dotnet9 through plugin dotnet-upgrade and preserve the pinned upstream source."

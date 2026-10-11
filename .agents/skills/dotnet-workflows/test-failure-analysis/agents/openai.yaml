@@ -1,0 +1,4 @@
+interface:
+  display_name: "test-failure-analysis"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $test-failure-analysis through plugin dotnet-workflows and preserve the pinned upstream source."

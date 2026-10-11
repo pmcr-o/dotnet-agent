@@ -1,0 +1,20 @@
+{
+  "id": "microbenchmarking",
+  "plugin": "dotnet-diag",
+  "independentSurface": true,
+  "independentChecker": false,
+  "sourceRef": "plugins/dotnet-diag/skills/microbenchmarking",
+  "input": [
+    "seed",
+    "workspace",
+    "relativeScript",
+    "apply"
+  ],
+  "output": [
+    "source",
+    "command",
+    "exitCode",
+    "evidence",
+    "checker_handoff"
+  ]
+}

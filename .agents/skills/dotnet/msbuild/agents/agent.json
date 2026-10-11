@@ -1,0 +1,20 @@
+{
+  "id": "msbuild",
+  "plugin": "dotnet",
+  "independentSurface": true,
+  "independentChecker": false,
+  "sourceRef": "plugins/dotnet/skills/msbuild",
+  "input": [
+    "seed",
+    "workspace",
+    "relativeScript",
+    "apply"
+  ],
+  "output": [
+    "source",
+    "command",
+    "exitCode",
+    "evidence",
+    "checker_handoff"
+  ]
+}

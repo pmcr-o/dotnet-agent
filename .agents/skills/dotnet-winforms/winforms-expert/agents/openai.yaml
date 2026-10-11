@@ -1,0 +1,4 @@
+interface:
+  display_name: "winforms-expert"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $winforms-expert through plugin dotnet-winforms and preserve the pinned upstream source."

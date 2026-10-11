@@ -1,0 +1,7 @@
+{
+  "skill": "template-comparison",
+  "plugin": "dotnet-template-engine",
+  "source": "plugins/dotnet-template-engine/skills/template-comparison",
+  "revision": "1d40f95ed0f2cdedfa4c9b2614b7c2035a4323cb",
+  "kind": "upstream-plugin-skill"
+}

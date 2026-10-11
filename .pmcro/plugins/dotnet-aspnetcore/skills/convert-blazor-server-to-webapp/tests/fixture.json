@@ -1,0 +1,7 @@
+{
+  "skill": "convert-blazor-server-to-webapp",
+  "plugin": "dotnet-aspnetcore",
+  "source": "plugins/dotnet-aspnetcore/skills/convert-blazor-server-to-webapp",
+  "revision": "1d40f95ed0f2cdedfa4c9b2614b7c2035a4323cb",
+  "kind": "upstream-plugin-skill"
+}

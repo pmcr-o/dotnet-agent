@@ -1,0 +1,20 @@
+{
+  "id": "migrate-vstest-to-mtp",
+  "plugin": "dotnet-test-migration",
+  "independentSurface": true,
+  "independentChecker": false,
+  "sourceRef": "plugins/dotnet-test-migration/skills/migrate-vstest-to-mtp",
+  "input": [
+    "seed",
+    "workspace",
+    "relativeScript",
+    "apply"
+  ],
+  "output": [
+    "source",
+    "command",
+    "exitCode",
+    "evidence",
+    "checker_handoff"
+  ]
+}

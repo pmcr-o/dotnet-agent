@@ -1,0 +1,20 @@
+{
+  "id": "exp-mock-usage-analysis",
+  "plugin": "dotnet-experimental",
+  "independentSurface": true,
+  "independentChecker": false,
+  "sourceRef": "plugins/dotnet-experimental/skills/exp-mock-usage-analysis",
+  "input": [
+    "seed",
+    "workspace",
+    "relativeScript",
+    "apply"
+  ],
+  "output": [
+    "source",
+    "command",
+    "exitCode",
+    "evidence",
+    "checker_handoff"
+  ]
+}

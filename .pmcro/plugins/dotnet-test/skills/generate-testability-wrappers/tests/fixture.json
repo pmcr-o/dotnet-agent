@@ -1,0 +1,7 @@
+{
+  "skill": "generate-testability-wrappers",
+  "plugin": "dotnet-test",
+  "source": "plugins/dotnet-test/skills/generate-testability-wrappers",
+  "revision": "1d40f95ed0f2cdedfa4c9b2614b7c2035a4323cb",
+  "kind": "upstream-plugin-skill"
+}

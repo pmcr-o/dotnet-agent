@@ -1,0 +1,9 @@
+{
+  "name": "dotnet-blazor",
+  "version": "0.1.2",
+  "description": "Skills for Blazor development: component authoring, interactivity, and web application patterns.",
+  "skills": [
+    "./skills/"
+  ],
+  "upstreamRef": ".pmcro/upstream/dotnet-skills/plugins/dotnet-blazor"
+}

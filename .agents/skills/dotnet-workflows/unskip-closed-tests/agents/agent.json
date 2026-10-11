@@ -1,0 +1,20 @@
+{
+  "id": "unskip-closed-tests",
+  "plugin": "dotnet-workflows",
+  "independentSurface": true,
+  "independentChecker": false,
+  "sourceRef": "agentic-workflows/unskip-closed-tests",
+  "input": [
+    "seed",
+    "workspace",
+    "relativeScript",
+    "apply"
+  ],
+  "output": [
+    "source",
+    "command",
+    "exitCode",
+    "evidence",
+    "checker_handoff"
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "create-skill"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $create-skill through plugin dotnet-repo-authoring and preserve the pinned upstream source."

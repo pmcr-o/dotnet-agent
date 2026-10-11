@@ -1,0 +1,4 @@
+interface:
+  display_name: "test-tagging"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $test-tagging through plugin dotnet-test and preserve the pinned upstream source."

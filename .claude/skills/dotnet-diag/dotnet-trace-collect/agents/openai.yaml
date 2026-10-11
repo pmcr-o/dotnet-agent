@@ -1,0 +1,4 @@
+interface:
+  display_name: "dotnet-trace-collect"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $dotnet-trace-collect through plugin dotnet-diag and preserve the pinned upstream source."

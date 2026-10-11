@@ -1,0 +1,4 @@
+interface:
+  display_name: "android-tombstone-symbolication"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $android-tombstone-symbolication through plugin dotnet-diag and preserve the pinned upstream source."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "migrate-nullable-references"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $migrate-nullable-references through plugin dotnet-upgrade and preserve the pinned upstream source."

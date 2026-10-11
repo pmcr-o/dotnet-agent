@@ -1,0 +1,9 @@
+{
+  "name": "dotnet-experimental",
+  "version": "0.1.2",
+  "description": "Experimental skills under active evaluation that may change or graduate to stable plugins.",
+  "skills": [
+    "./skills/"
+  ],
+  "upstreamRef": ".pmcro/upstream/dotnet-skills/plugins/dotnet-experimental"
+}

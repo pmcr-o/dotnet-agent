@@ -1,0 +1,4 @@
+interface:
+  display_name: "csharp-expert"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $csharp-expert through plugin dotnet and preserve the pinned upstream source."

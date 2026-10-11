@@ -1,0 +1,20 @@
+{
+  "id": "maui-app-lifecycle",
+  "plugin": "dotnet-maui",
+  "independentSurface": true,
+  "independentChecker": false,
+  "sourceRef": "plugins/dotnet-maui/skills/maui-app-lifecycle",
+  "input": [
+    "seed",
+    "workspace",
+    "relativeScript",
+    "apply"
+  ],
+  "output": [
+    "source",
+    "command",
+    "exitCode",
+    "evidence",
+    "checker_handoff"
+  ]
+}

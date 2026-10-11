@@ -1,0 +1,20 @@
+{
+  "id": "maui-shell-navigation",
+  "plugin": "dotnet-maui",
+  "independentSurface": true,
+  "independentChecker": false,
+  "sourceRef": "plugins/dotnet-maui/skills/maui-shell-navigation",
+  "input": [
+    "seed",
+    "workspace",
+    "relativeScript",
+    "apply"
+  ],
+  "output": [
+    "source",
+    "command",
+    "exitCode",
+    "evidence",
+    "checker_handoff"
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "code-testing-extensions"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $code-testing-extensions through plugin dotnet-test and preserve the pinned upstream source."

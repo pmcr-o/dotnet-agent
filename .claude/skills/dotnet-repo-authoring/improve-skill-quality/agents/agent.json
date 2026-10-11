@@ -1,0 +1,20 @@
+{
+  "id": "improve-skill-quality",
+  "plugin": "dotnet-repo-authoring",
+  "independentSurface": true,
+  "independentChecker": false,
+  "sourceRef": ".agents/skills/improve-skill-quality",
+  "input": [
+    "seed",
+    "workspace",
+    "relativeScript",
+    "apply"
+  ],
+  "output": [
+    "source",
+    "command",
+    "exitCode",
+    "evidence",
+    "checker_handoff"
+  ]
+}

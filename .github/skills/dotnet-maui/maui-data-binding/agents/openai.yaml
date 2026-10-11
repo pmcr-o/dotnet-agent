@@ -1,0 +1,4 @@
+interface:
+  display_name: "maui-data-binding"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $maui-data-binding through plugin dotnet-maui and preserve the pinned upstream source."

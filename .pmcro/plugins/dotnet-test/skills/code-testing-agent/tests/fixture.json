@@ -1,0 +1,7 @@
+{
+  "skill": "code-testing-agent",
+  "plugin": "dotnet-test",
+  "source": "plugins/dotnet-test/skills/code-testing-agent",
+  "revision": "1d40f95ed0f2cdedfa4c9b2614b7c2035a4323cb",
+  "kind": "upstream-plugin-skill"
+}

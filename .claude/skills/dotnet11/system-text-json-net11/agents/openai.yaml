@@ -1,0 +1,4 @@
+interface:
+  display_name: "system-text-json-net11"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $system-text-json-net11 through plugin dotnet11 and preserve the pinned upstream source."

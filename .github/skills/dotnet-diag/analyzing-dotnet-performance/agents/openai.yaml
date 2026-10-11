@@ -1,0 +1,4 @@
+interface:
+  display_name: "analyzing-dotnet-performance"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $analyzing-dotnet-performance through plugin dotnet-diag and preserve the pinned upstream source."

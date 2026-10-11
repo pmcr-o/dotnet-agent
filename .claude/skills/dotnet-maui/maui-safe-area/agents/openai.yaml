@@ -1,0 +1,4 @@
+interface:
+  display_name: "maui-safe-area"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $maui-safe-area through plugin dotnet-maui and preserve the pinned upstream source."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "build-perf-diagnostics"
+  short_description: "Pinned dotnet/skills integration wrapper"
+  default_prompt: "Use $build-perf-diagnostics through plugin dotnet-msbuild and preserve the pinned upstream source."
